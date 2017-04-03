@@ -1,1 +1,1 @@
-angular.module('Restaurante', ['ngRoute', 'ngResource']);
+angular.module('CAAC', ['ngRoute', 'ngResource']);

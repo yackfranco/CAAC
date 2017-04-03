@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="Restaurante">
+<html ng-app="CAAC">
     <head>
         <meta charset="UTF-8">
         <title>Restaurante</title>

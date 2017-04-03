@@ -1,4 +1,4 @@
-angular.module('Restaurante').
+angular.module('CAAC').
         controller('indexController',['$scope', function($scope){
                 
         }]);

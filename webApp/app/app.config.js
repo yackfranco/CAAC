@@ -1,4 +1,4 @@
-angular.module('Restaurante').
+angular.module('CAAC').
         config(['$routeProvider',
             function config($routeProvider) {
                 $routeProvider.
@@ -6,25 +6,29 @@ angular.module('Restaurante').
                             controller: 'indexController',
                             templateUrl: 'app/template/index.html'
                         }).
-                        when('/Catalogo', {
-                            controller: 'catalogoController',
-                            templateUrl: 'app/template/Catalogo.html'
+                        when('/ControlApiarios', {
+                            controller: 'controlApiariosController',
+                            templateUrl: 'app/template/ControlApiarios.html'
                         }).
-                        when('/Empanadas', {
-                            controller: 'empanadasController',
-                            templateUrl: 'app/template/Empanadas.html'
+                        when('/ControlAbejaReina', {
+                            controller: 'controlAbejaReinaController',
+                            templateUrl: 'app/template/ControlAbejaReina.html'
                         }).
-                        when('/Hamburguesa', {
-                            controller: 'hamburguesaProController',
-                            templateUrl: 'app/template/Hamburguesa.html'
+                        when('/ControlGastos', {
+                            controller: 'controlGastosController',
+                            templateUrl: 'app/template/ControlGastos.html'
                         }).
-                        when('/Hotdog', {
-                            controller: 'hotdogController',
-                            templateUrl: 'app/template/Hotdog.html'
+                        when('/ControlInventario', {
+                            controller: 'controlInventarioController',
+                            templateUrl: 'app/template/ControlInventario.html'
                         }).
-                        when('/Pizza', {
-                            controller: 'pizzaController',
-                            templateUrl: 'app/template/Pizza.html'
+                        when('/ControlProduccionMiel', {
+                            controller: 'controlProduccionMielController',
+                            templateUrl: 'app/template/ControlProduccionMiel.html'
+                        }).
+                        when('/MenuControl', {
+                            controller: 'menuControlController',
+                            templateUrl: 'app/template/MenuControl.html'
                         }).
                         otherwise('/');
             }
