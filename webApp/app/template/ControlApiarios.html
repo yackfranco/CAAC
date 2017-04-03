@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAAC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <link rel="stylesheet" href="Css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="Css/estilo.css">
+    </head>
+    <body>
+
+        <div class=" container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="le nav nav-tabs btn-lg">
+                        <li role="presentation" class=""><a href="MenuRegistrar.html">Registros</a></li>
+                        <li role="presentation" class="active"><a href="MenuControl.html">Control</a></li>
+                        <li role="presentation" class=""><a href="MenuConsultas.html">Consultas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
+                    <a href="ControlApiarios.html" class="list-group-item active">Control Apiarios</a>
+                    <a href="ControlInventario.html" class="list-group-item">Inventario</a>
+                    <a href="ProduccionMiel.html" class="list-group-item">Produccion De Miel</a>
+                    <a href="" class="list-group-item">Control De Aveja Reina</a>
+                    <a href="Gastos.html" class="list-group-item">Gastos</a>
+                </div>
+
+                <div class="col-lg-8 col-xs-9 col-lg-offset-1 col-xs-offset-2">
+
+                    <div class="col-lg-8 col-xs-9 Titulo">
+                        Control de Apiarios
+                    </div>
+
+                    <form class="col-lg-offset-1 col-lg-8 col-xs-offset-1 col-xs-5 margenformulario">
+
+                        <div class="row">
+
+                            <div class="col-lg-12 col-xs-12">
+
+                                <div class="col-lg-4 col-xs-4">
+                                    <label >Apiario</label>
+                                    <select class="form-control">
+                                        <option>Apiario 1</option>
+                                        <option>Apiario 2</option>
+                                        <option>Apiario 3</option>
+                                        <option>Apiario 4</option>
+                                        <option>Apiario 5</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-4 col-xs-4">
+                                    <div class="form-group">
+                                        <label >Colmena</label>
+                                        <select class="form-control">
+                                        <option>Colmena 1</option>
+                                        <option>Colmena 2</option>
+                                        <option>Colmena 3</option>
+                                        <option>Colmena 4</option>
+                                        <option>Colmena 5</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-xs-4">
+                                    <label >Fecha de Visita</label>
+                                    <input type="date" class="btn-lg form-control">
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12">
+
+                                <div class="col-lg-4 col-xs-4">
+                                    <label >Reina</label>
+                                    <select class="form-control">
+                                        <option>Buena</option>
+                                        <option>Regular</option>
+                                        <option>Malo</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-4 col-xs-4">
+                                    <div class="form-group">
+                                        <label >Atomizador</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-xs-4">
+                                    <label >¿ hubieron Cambios en la Colmena ?</label>
+                                    <input id="input-1" type="checkbox">
+                                    <script>
+                                        $('#input-1').checkboxpicker({
+                                            html: true,
+                                            offLabel: '<span class="glyphicon glyphicon-remove">',
+                                            onLabel: '<span class="glyphicon glyphicon-ok">'
+                                        });
+                                    </script>
+                                </div>
+
+                                <div class="col-lg-12 col-xs-12 concol">
+
+                                    <div class="row">
+                                        <div class="col-lg-12 col-xs-12">
+                                            <ul class="le nav nav-tabs btn-lg">
+                                                <li role="presentation" class="active"><a href="">Camara 1</a></li>
+                                                <li role="presentation" class=""><a href="">Camara 2</a></li>
+                                                <li role="presentation" class=""><a href="">Camara 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-10 col-xs-10">
+                                        <label >Estado de la Camara</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 1</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 2</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>    
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 3</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 4</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 5</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 6</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 7</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 8</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 9</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 10</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 11</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 12</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 13</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 14</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 15</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 16</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 17</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 18</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 19</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 20</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 21</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 22</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 23</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 24</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 25</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 26</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 27</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 28</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 29</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-5 col-xs-5">
+                                        <label >Marcos 30</label>
+                                        <select class="form-control">
+                                            <option>Buena</option>
+                                            <option>Regular</option>
+                                            <option>Malo</option>
+                                        </select>
+                                    </div>   
+
+                                    <div class="text-center col-lg-2 col-xs-2 "> 
+                                        <button type="submit" class="btn btn-success btn-xs btnsigui">Siguiente</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12 col-xs-12 divobsconcol">
+                                    <label >Observaciones</label>
+                                    <textarea class="form-control observacionesconinv" rows="4"></textarea>
+                                </div>
+
+                                <div class="text-center col-lg-12 col-xs-12"> 
+                                    <button type="submit" class="btn btn-warning btn-xs btncanconcol">Cancelar</button>
+                                </div>
+
+                            </div>
+
+                            <!--                            <div class="col-lg-6 col-xs-6">
+                            
+                                                            <div class="row">
+                            
+                                                                <div class="col-lg-5 col-xs-5">
+                                                                    <label >Apiario</label>
+                                                                    <select class="form-control apiarios1">
+                                                                        <option>Apiario 1</option>
+                                                                        <option>Apiario 2</option>
+                                                                        <option>Apiario 3</option>
+                                                                        <option>Apiario 4</option>
+                                                                        <option>Apiario 5</option>
+                                                                    </select>
+                                                                </div>
+                            
+                                                                <div class="col-lg-1 col-xs-1">
+                                                                    <button type="submit" class="btn btn-success btn-xs aumento">+</button>
+                                                                </div>
+                            
+                                                                <div class="col-lg-5 col-xs-5">
+                                                                    <textarea class="form-control apiarios" rows="10"></textarea>
+                                                                </div>
+                            
+                                                                <div class="col-lg-1 col-xs-1">
+                                                                    <button type="submit" class="btn btn-warning btn-xs merma">-</button>
+                                                                </div>
+                            
+                                                                <div class="col-lg-12 col-xs-12">
+                                                                    <div class="textogastos">Valor por Apiario</div>
+                                                                </div>
+                            
+                                                                <div class="col-lg-12 col-xs-12">
+                                                                    <div class="textogastos1">0</div>
+                                                                </div>
+                            
+                            
+                                                                <div class="text-center col-lg-12 col-xs-12"> 
+                                                                    <button type="submit" class="btn btn-success btn-lg margenboton ">Guardar</button>
+                                                                    <button type="submit" class="btn btn-warning btn-lg margenboton ">Cancelar</button>
+                                                                </div>
+                            
+                                                            </div>
+                            
+                                                        </div>-->
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+        <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-checkbox.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>

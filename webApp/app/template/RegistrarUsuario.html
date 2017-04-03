@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAAC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <link rel="stylesheet" href="Css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="Css/estilo.css">
+    </head>
+    <body>
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="le nav nav-tabs btn-lg">
+                        <li role="presentation" class="active"><a href="MenuRegistrar.html">Registros</a></li>
+                        <li role="presentation" class=""><a href="MenuControl.html">Control</a></li>
+                        <li role="presentation" class=""><a href="#">Consultas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
+                    <a href="RegistrarUsuario.html" class="list-group-item active">Registrar Usuarios</a>
+                    <a href="RegistrarApiarios.html" class="list-group-item">Registrar Apiarios</a>
+                    <a href="RegistrarColmenas.html" class="list-group-item">Registrar Colmenas</a>
+                    <a href="RegistrarCamaras.html" class="list-group-item">Registro de Camaras</a>
+                    <a href="RegistrarMarcos.html" class="list-group-item">Registro de Marcos</a>
+                    <a href="RegistrarInventario.html" class="list-group-item">Registrar Inventario</a>
+                </div>
+                <div class="col-lg-7 col-xs-7 col-lg-offset-2 col-xs-offset-2">
+                    <!--titulo-->
+                    <div class="col-lg-8 Titulo">
+                        Registrar Usuario
+                    </div>
+                    <form class="col-lg-offset-2 col-lg-4 col-xs-offset-1 col-xs-5 margenformulario">
+                        <div class="form-group">
+                            <label >Usuario</label>
+                            <input type="text" class="form-control" name="Usuario" placeholder="Usuario">
+                        </div>
+                        <div class="form-group">
+                            <label >Contraseña</label>
+                            <input type="password" class="form-control" name="Contrasña" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <label >Confirmar Contraseña</label>
+                            <input type="password" class="form-control" name="ConfirmarContraseña" placeholder="Confirmar Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <label >Correo</label>
+                            <input type="email" class="form-control" name="Correo" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                            <label >Celular</label>
+                            <input type="number" class="form-control" name="Celular" placeholder="Celular">
+                        </div>
+
+                        <!--rol-->
+                        <label >Rol</label>
+                        <div class="btn-group btn-block">
+                            <button type="button" class="btn btn-default">Admin</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Admin Apiario</a></li>
+                                <li><a href="#">Contador</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-warning margenboton col-lg-offset-9 col-xs-offset-9">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+        <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>

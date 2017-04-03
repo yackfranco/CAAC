@@ -1,0 +1,395 @@
+.pppppp{
+    /*background: linear-gradient(to bottom, #ffcc33 0,#faf2cc 100%);*/
+}
+
+.pabotones{
+    height: 1020px;
+    background-color: black;
+}
+
+.botones{
+    height: 800px;
+}
+
+.imagen{
+    width: 515px;
+    margin: 0 auto 0 auto;
+}
+
+.copy{
+    text-align: center;
+}
+
+/*colores del menu del lado izquierdo*/
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-image: linear-gradient(to bottom,#ffcc33 0,#faf2cc 100%);
+    border-color: #ffcc33;
+    color: #8a6d3b;
+}
+
+.le{
+    font-weight: normal;
+    font-style: italic;
+    font-family: serif;
+}
+
+/*Colores de los botones principales*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #8a6d3b;
+    cursor: default;
+    background-color: #ffcc33;
+    border: 2px solid #000000;
+    border-bottom-color: transparent;
+}
+
+a:hover, a:focus {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.pesoinv{
+    margin-top: 30px;
+}
+
+/*botones de control de gastos*/
+
+.aumento{
+    margin-top: 25px;
+}
+
+.merma{
+    margin-top: 204px;
+}
+
+.observacionesgastos{
+    margin-top: 2%;
+}
+
+.apiarios{
+    margin-top: 17%;
+    width: 170px;
+}
+
+.apiarios1{
+    width: 165px;
+}
+
+.textogastos{
+    text-align: center;
+    margin-top: 10%;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.textogastos1{
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+/*---Consultar Inventarios---*/
+.btnbuscarinventario{
+    height: 33px;
+    width: 80px;
+}
+
+.btnbuscarinv{
+    color: white;
+}
+
+.btnbuscarinv:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.btnbuscarinv:link{
+    text-decoration: none;
+}
+
+.labelsconinv{
+    margin-top: 1%;
+}
+
+.rebusinv{
+    margin-top: 20%;
+}
+
+.regcodmarco{
+    margin-top: 3%;
+}
+
+.estadoinvm{
+    text-align: center;
+    height: 33px;
+    width: 150px;
+    background-image: linear-gradient(to bottom, #d9534f 0,#ff9999 100%);
+    border-radius: 15px;
+}
+
+.estadoinvb{
+    text-align: center;
+    height: 33px;
+    width: 150px;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#5BBFC4 100%);
+    border-radius: 15px;
+}
+
+.conestado{
+    margin-top: 5%;
+}
+
+.observacionesconinv{
+    width: 100%;
+    resize: none;
+}
+
+.btncanconcol{
+    margin-left: 85%;
+    margin-top: 2%;
+}
+
+.btnsigui{
+    margin-top: 26%;
+}
+
+.concol{
+    border: #ffcc33 2px solid;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.divobsconcol{
+    margin-top: 2%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*LOGIN*/
+.centrarLogin{
+    width: 400px;
+    margin: 0 auto 0 auto; 
+    margin-top: 80px;
+}
+
+.TituloLogin{
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/*REGISTROS Registrar-Usuarios*/
+.panel-warning>.panel-heading {
+    background-image: linear-gradient(to bottom,#ffcc33 0,#faf2cc 100%);
+}
+
+/*------------------------Cambiar el Estilo de los botones--------------------------------------*/
+.btn-warning {
+    background-image: linear-gradient(to bottom,#ffcc33 0,#faf2cc 100%);
+    border:1px solid #ffcc33;
+    color: #8A6D3B;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.btn-warning:hover{
+    color: #8A6D3B;
+    font-weight: bold;
+    background-color: #faf2cc;
+    border-color: #d58512;
+}
+
+.btn-success {
+    background-image: linear-gradient(to bottom,#5cb85c 0,#5BBFC4 100%);
+    border:1px solid #3e8f3e;
+    color: #8A6D3B;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.btn-success:hover{
+    color: #8A6D3B;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#5BBFC4 100%);
+    background-color:#5BBFC4;
+    border-color: #d58512;
+}
+
+.btn-danger {
+    background-image: linear-gradient(to bottom,#d9534f 0,#ff9999 100%);
+    border:1px solid #3e8f3e;
+    color: #8A6D3B;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.btn-danger:hover{
+    color: #8A6D3B;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom,#d9534f 0,#ff9999 100%);
+    background-color:#ff9999;
+    border-color: #d58512;
+}
+
+
+
+/*------------------------Cambiar el Estilo de los botones--------------------------------------*/
+
+.margenformulario{
+    margin-top: 50px;
+}
+
+.margenboton{
+    margin-top: 40px;
+}
+.quitarlink:link{
+    text-decoration: none;
+}
+
+/*Quitar Flechas de Aumento en los input number*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+
+
+
+
+.Titulo{
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.margentexbox{
+    margin-left: 15px;
+    margin-right:  15px;
+}
+
+/*textarea en control-Inventario*/
+.TAcontrolInventario{
+    margin-top: 35px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+.subtitulo{
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+.btnconsultarcol{
+    margin-top: 100px;
+    width: 200px;
+    height: 100px;
+    font-size: 35px;
+}
+
+.btnConsulasReportes{
+    margin-top: 100px;
+    width: 250px;
+    height: 200px;
+    font-size: 35px;
+}
+
+
+.tituloconsltarcol{
+    margin-top: 150px;
+}
+
+.subtituloConsulColBueno{
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 10px;
+    color: green;
+    border-color: #d58512;
+}
+
+.subtituloConsulColRegular{
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 10px;
+    color: #ffcc33;
+    border-color: #d58512;
+}
+
+.subtituloConsulColMalo{
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 10px;
+    color:#d9534f;
+    border-color: #d58512;
+}
+
+.margenfilas{
+    margin-top: 28px;
+}
+
+.margendatos{
+    margin-top: 6px;
+}
+
+.imagencopyright{
+    margin: 50px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.textocopyright{
+    margin: 70px;
+    text-align:justify;
+}
+
+.panelcopyright{
+/*    border: #000000 solid 2px;*/
+    height: 83%;
+}
+.espaciocopyright{
+    padding: 50px;
+    margin-top: 45%;
+}
+
+.colorpanelmedioCR{
+  background-image: linear-gradient(to bottom,#ffcc33 0,#faf2cc 100%);  
+}
