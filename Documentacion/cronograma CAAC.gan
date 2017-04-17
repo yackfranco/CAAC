@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto CAAC (Control de Apiarios Aspro Campo)" company="SENA CTA - Semillero" webLink="http://" view-date="2017-04-27" view-index="0" gantt-divider-location="972" resource-divider-location="1142" version="2.8.2" locale="es">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd10" name="ID" width="81" order="0"/>
+        <field id="tpd3" name="Nombre" width="307" order="1"/>
+        <field id="tpd4" name="Fecha de inicio" width="90" order="2"/>
+        <field id="tpd5" name="Fecha de fin" width="91" order="3"/>
+        <field id="tpd9" name="Antecesores" width="101" order="4"/>
+        <field id="tpd7" name="Progreso" width="90" order="5"/>
+        <field id="tpd13" name="Recursos" width="208" order="6"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="631" order="0"/>
+        <field id="1" name="Función" width="507" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Colombia">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2006" month="1" date="1" type="HOLIDAY"/>
+        <date year="2006" month="1" date="9" type="HOLIDAY"/>
+        <date year="2006" month="3" date="20" type="HOLIDAY"/>
+        <date year="2006" month="4" date="13" type="HOLIDAY"/>
+        <date year="2006" month="4" date="14" type="HOLIDAY"/>
+        <date year="2006" month="5" date="1" type="HOLIDAY"/>
+        <date year="2006" month="5" date="29" type="HOLIDAY"/>
+        <date year="2006" month="6" date="19" type="HOLIDAY"/>
+        <date year="2006" month="6" date="26" type="HOLIDAY"/>
+        <date year="2006" month="7" date="3" type="HOLIDAY"/>
+        <date year="2006" month="7" date="20" type="HOLIDAY"/>
+        <date year="2006" month="8" date="7" type="HOLIDAY"/>
+        <date year="2006" month="8" date="21" type="HOLIDAY"/>
+        <date year="2006" month="10" date="16" type="HOLIDAY"/>
+        <date year="2006" month="11" date="6" type="HOLIDAY"/>
+        <date year="2006" month="11" date="13" type="HOLIDAY"/>
+        <date year="2006" month="12" date="8" type="HOLIDAY"/>
+        <date year="2006" month="12" date="25" type="HOLIDAY"/>
+        <date year="2007" month="1" date="1" type="HOLIDAY"/>
+        <date year="2007" month="1" date="8" type="HOLIDAY"/>
+        <date year="2007" month="3" date="19" type="HOLIDAY"/>
+        <date year="2007" month="4" date="5" type="HOLIDAY"/>
+        <date year="2007" month="4" date="6" type="HOLIDAY"/>
+        <date year="2007" month="5" date="1" type="HOLIDAY"/>
+        <date year="2007" month="5" date="21" type="HOLIDAY"/>
+        <date year="2007" month="6" date="11" type="HOLIDAY"/>
+        <date year="2007" month="6" date="18" type="HOLIDAY"/>
+        <date year="2007" month="7" date="2" type="HOLIDAY"/>
+        <date year="2007" month="7" date="20" type="HOLIDAY"/>
+        <date year="2007" month="8" date="7" type="HOLIDAY"/>
+        <date year="2007" month="8" date="20" type="HOLIDAY"/>
+        <date year="2007" month="10" date="15" type="HOLIDAY"/>
+        <date year="2007" month="11" date="5" type="HOLIDAY"/>
+        <date year="2007" month="11" date="12" type="HOLIDAY"/>
+        <date year="2007" month="12" date="8" type="HOLIDAY"/>
+        <date year="2007" month="12" date="25" type="HOLIDAY"/>
+        <date year="2008" month="1" date="1" type="HOLIDAY"/>
+        <date year="2008" month="1" date="7" type="HOLIDAY"/>
+        <date year="2008" month="3" date="20" type="HOLIDAY"/>
+        <date year="2008" month="3" date="21" type="HOLIDAY"/>
+        <date year="2008" month="3" date="24" type="HOLIDAY"/>
+        <date year="2008" month="5" date="1" type="HOLIDAY"/>
+        <date year="2008" month="5" date="5" type="HOLIDAY"/>
+        <date year="2008" month="5" date="26" type="HOLIDAY"/>
+        <date year="2008" month="6" date="16" type="HOLIDAY"/>
+        <date year="2008" month="6" date="30" type="HOLIDAY"/>
+        <date year="2008" month="7" date="20" type="HOLIDAY"/>
+        <date year="2008" month="8" date="7" type="HOLIDAY"/>
+        <date year="2008" month="8" date="18" type="HOLIDAY"/>
+        <date year="2008" month="10" date="13" type="HOLIDAY"/>
+        <date year="2008" month="11" date="3" type="HOLIDAY"/>
+        <date year="2008" month="11" date="17" type="HOLIDAY"/>
+        <date year="2008" month="12" date="8" type="HOLIDAY"/>
+        <date year="2008" month="12" date="25" type="HOLIDAY"/>
+        <date year="2009" month="1" date="1" type="HOLIDAY"/>
+        <date year="2009" month="1" date="12" type="HOLIDAY"/>
+        <date year="2009" month="3" date="23" type="HOLIDAY"/>
+        <date year="2009" month="4" date="5" type="HOLIDAY"/>
+        <date year="2009" month="4" date="9" type="HOLIDAY"/>
+        <date year="2009" month="4" date="10" type="HOLIDAY"/>
+        <date year="2009" month="5" date="1" type="HOLIDAY"/>
+        <date year="2009" month="5" date="25" type="HOLIDAY"/>
+        <date year="2009" month="6" date="15" type="HOLIDAY"/>
+        <date year="2009" month="6" date="22" type="HOLIDAY"/>
+        <date year="2009" month="6" date="29" type="HOLIDAY"/>
+        <date year="2009" month="7" date="20" type="HOLIDAY"/>
+        <date year="2009" month="8" date="7" type="HOLIDAY"/>
+        <date year="2009" month="8" date="17" type="HOLIDAY"/>
+        <date year="2009" month="10" date="12" type="HOLIDAY"/>
+        <date year="2009" month="11" date="2" type="HOLIDAY"/>
+        <date year="2009" month="11" date="16" type="HOLIDAY"/>
+        <date year="2009" month="12" date="8" type="HOLIDAY"/>
+        <date year="2009" month="12" date="25" type="HOLIDAY"/>
+        <date year="2010" month="1" date="1" type="HOLIDAY"/>
+        <date year="2010" month="1" date="11" type="HOLIDAY"/>
+        <date year="2010" month="3" date="22" type="HOLIDAY"/>
+        <date year="2010" month="4" date="1" type="HOLIDAY"/>
+        <date year="2010" month="4" date="2" type="HOLIDAY"/>
+        <date year="2010" month="5" date="1" type="HOLIDAY"/>
+        <date year="2010" month="5" date="17" type="HOLIDAY"/>
+        <date year="2010" month="6" date="7" type="HOLIDAY"/>
+        <date year="2010" month="6" date="14" type="HOLIDAY"/>
+        <date year="2010" month="7" date="5" type="HOLIDAY"/>
+        <date year="2010" month="7" date="20" type="HOLIDAY"/>
+        <date year="2010" month="8" date="7" type="HOLIDAY"/>
+        <date year="2010" month="8" date="16" type="HOLIDAY"/>
+        <date year="2010" month="10" date="18" type="HOLIDAY"/>
+        <date year="2010" month="11" date="1" type="HOLIDAY"/>
+        <date year="2010" month="11" date="15" type="HOLIDAY"/>
+        <date year="2010" month="12" date="8" type="HOLIDAY"/>
+        <date year="2010" month="12" date="25" type="HOLIDAY"/>
+        <date year="2011" month="1" date="1" type="HOLIDAY"/>
+        <date year="2011" month="1" date="10" type="HOLIDAY"/>
+        <date year="2011" month="3" date="21" type="HOLIDAY"/>
+        <date year="2011" month="4" date="21" type="HOLIDAY"/>
+        <date year="2011" month="4" date="22" type="HOLIDAY"/>
+        <date year="2011" month="6" date="6" type="HOLIDAY"/>
+        <date year="2011" month="6" date="27" type="HOLIDAY"/>
+        <date year="2011" month="7" date="4" type="HOLIDAY"/>
+        <date year="2011" month="7" date="20" type="HOLIDAY"/>
+        <date year="2011" month="8" date="15" type="HOLIDAY"/>
+        <date year="2011" month="10" date="17" type="HOLIDAY"/>
+        <date year="2011" month="11" date="7" type="HOLIDAY"/>
+        <date year="2011" month="11" date="14" type="HOLIDAY"/>
+        <date year="2011" month="12" date="8" type="HOLIDAY"/>
+        <date year="2011" month="12" date="25" type="HOLIDAY"/>
+        <date year="2012" month="1" date="1" type="HOLIDAY"/>
+        <date year="2012" month="1" date="9" type="HOLIDAY"/>
+        <date year="2012" month="3" date="19" type="HOLIDAY"/>
+        <date year="2012" month="4" date="5" type="HOLIDAY"/>
+        <date year="2012" month="4" date="6" type="HOLIDAY"/>
+        <date year="2012" month="5" date="1" type="HOLIDAY"/>
+        <date year="2012" month="5" date="21" type="HOLIDAY"/>
+        <date year="2012" month="6" date="11" type="HOLIDAY"/>
+        <date year="2012" month="6" date="18" type="HOLIDAY"/>
+        <date year="2012" month="7" date="2" type="HOLIDAY"/>
+        <date year="2012" month="7" date="20" type="HOLIDAY"/>
+        <date year="2012" month="8" date="7" type="HOLIDAY"/>
+        <date year="2012" month="8" date="20" type="HOLIDAY"/>
+        <date year="2012" month="10" date="15" type="HOLIDAY"/>
+        <date year="2012" month="11" date="5" type="HOLIDAY"/>
+        <date year="2012" month="11" date="12" type="HOLIDAY"/>
+        <date year="2012" month="12" date="8" type="HOLIDAY"/>
+        <date year="2012" month="12" date="25" type="HOLIDAY"/>
+        <date year="2017" month="3" date="20" type="HOLIDAY"/>
+        <date year="2017" month="4" date="13" type="HOLIDAY"/>
+        <date year="2017" month="4" date="14" type="HOLIDAY"/>
+        <date year="2017" month="5" date="1" type="HOLIDAY"/>
+        <date year="2017" month="5" date="29" type="HOLIDAY"/>
+        <date year="2017" month="6" date="19" type="HOLIDAY"/>
+        <date year="2017" month="6" date="26" type="HOLIDAY"/>
+        <date year="2017" month="7" date="3" type="HOLIDAY"/>
+        <date year="2017" month="7" date="20" type="HOLIDAY"/>
+        <date year="2017" month="3" date="6" type="HOLIDAY"/>
+        <date year="2017" month="3" date="7" type="HOLIDAY"/>
+        <date year="2017" month="3" date="8" type="HOLIDAY"/>
+        <date year="2017" month="3" date="9" type="HOLIDAY"/>
+        <date year="2017" month="3" date="10" type="HOLIDAY"/>
+        <date year="2017" month="3" date="13" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Desarrollo de la Aplicacion" color="#000000" meeting="false" start="2017-03-03" duration="48" complete="0" expand="true">
+            <task id="2" name="Reestructuracion aplicativo CAAC a Angular" meeting="false" start="2017-03-03" duration="23" complete="0" expand="true">
+                <depend id="88" type="2" difference="0" hardness="Strong"/>
+                <task id="5" name="Modulo Registros" color="#000000" meeting="false" start="2017-03-03" duration="18" complete="0" expand="false">
+                    <task id="7" name="Reestructuracion Registrar Usuario" color="#8cb6ce" meeting="false" start="2017-03-03" duration="2" complete="0" expand="true">
+                        <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="17" name="Reestructuracion Registrar Apiarios" color="#8cb6ce" meeting="false" start="2017-03-15" duration="2" complete="0" expand="true">
+                        <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="19" name="Reestructuracion Registrar Colmenas" color="#8cb6ce" meeting="false" start="2017-03-17" duration="2" complete="0" expand="true">
+                        <depend id="21" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="21" name="Reestructuracion Registro Camaras" color="#8cb6ce" meeting="false" start="2017-03-22" duration="2" complete="0" expand="true"/>
+                    <task id="25" name="Reestructuracion Registro Marcos" color="#8cb6ce" meeting="false" start="2017-04-03" duration="2" complete="0" expand="true">
+                        <depend id="23" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="23" name="Reestructuracion Registrar Inventario" color="#8cb6ce" meeting="false" start="2017-04-05" duration="2" complete="0" expand="true">
+                        <depend id="35" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="9" name="Modulo Control" color="#000000" meeting="false" start="2017-03-03" duration="19" complete="0" expand="true">
+                    <task id="11" name="Reestructuracion Control Apiarios" color="#8cb6ce" meeting="false" start="2017-03-03" duration="2" complete="0" expand="true">
+                        <depend id="27" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="27" name="Reestructuracion Inventario" color="#8cb6ce" meeting="false" start="2017-03-15" duration="2" complete="0" expand="true">
+                        <depend id="29" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="29" name="Reestructuracion Prduccion de Miel" color="#8cb6ce" meeting="false" start="2017-03-17" duration="11" complete="0" expand="true">
+                        <depend id="31" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="31" name="Reestructuracion Control de Abeja Reina" color="#8cb6ce" meeting="false" start="2017-04-04" duration="2" complete="0" expand="true">
+                        <depend id="33" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="33" name="Reestructuracion Gastos" color="#8cb6ce" meeting="false" start="2017-04-06" duration="2" complete="0" expand="true">
+                        <depend id="15" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="13" name="Modulo Consultas" color="#000000" meeting="false" start="2017-04-10" duration="4" complete="0" expand="true">
+                    <task id="15" name="Reestructuracion Consultar Colmena" color="#8cb6ce" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true">
+                        <depend id="37" type="2" difference="0" hardness="Strong"/>
+                        <task id="35" name="Reestructuracion Inventario" color="#8cb6ce" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true"/>
+                    </task>
+                    <task id="37" name="Reestructuracion Reportes" color="#8cb6ce" meeting="false" start="2017-04-12" duration="2" complete="0" expand="true"/>
+                </task>
+            </task>
+            <task id="88" name="Creacion de Base de Datos CAAC" color="#8cb6ce" meeting="false" start="2017-04-18" duration="2" complete="0" expand="true"/>
+            <task id="93" name="Programacion PHP" color="#000000" meeting="false" start="2017-05-02" duration="16" complete="0" expand="true">
+                <task id="95" name="Seguridad" color="#8cb6ce" meeting="false" start="2017-05-02" duration="2" complete="0" expand="true">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                    <depend id="129" type="2" difference="0" hardness="Strong"/>
+                    <task id="102" name="Login" color="#8cb6ce" meeting="false" start="2017-05-02" duration="1" complete="0" expand="true">
+                        <depend id="106" type="2" difference="0" hardness="Strong"/>
+                        <depend id="121" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="106" name="Restricciones" color="#8cb6ce" meeting="false" start="2017-05-03" duration="1" complete="0" expand="true"/>
+                    <task id="121" name="LogOut" color="#8cb6ce" meeting="false" start="2017-05-03" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="127" name="modulo Registros" color="#8cb6ce" meeting="false" start="2017-05-04" duration="12" complete="0" expand="false">
+                    <depend id="185" type="2" difference="0" hardness="Strong"/>
+                    <task id="144" name="Registrar Usuario" color="#8cb6ce" meeting="false" start="2017-05-04" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="146" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="146" name="Registrar Apiarios" color="#8cb6ce" meeting="false" start="2017-05-08" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="148" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="148" name="Registrar Colmenas" color="#8cb6ce" meeting="false" start="2017-05-10" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="150" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="150" name="Registro Camaras" color="#8cb6ce" meeting="false" start="2017-05-12" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="152" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="152" name="Registro Marcos" color="#8cb6ce" meeting="false" start="2017-05-16" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="154" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="154" name="Registrar Inventario" color="#8cb6ce" meeting="false" start="2017-05-18" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                </task>
+                <task id="129" name="modulo Control" color="#8cb6ce" meeting="false" start="2017-05-04" duration="10" complete="0" expand="false">
+                    <task id="173" name="Control Apiarios" color="#8cb6ce" meeting="false" start="2017-05-04" duration="2" complete="0" expand="true">
+                        <depend id="175" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="175" name="Inventario" color="#8cb6ce" meeting="false" start="2017-05-08" duration="2" complete="0" expand="true">
+                        <depend id="177" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="177" name="Prduccion de Miel" color="#8cb6ce" meeting="false" start="2017-05-10" duration="2" complete="0" expand="true">
+                        <depend id="179" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="179" name="Control de Abeja Reina" color="#8cb6ce" meeting="false" start="2017-05-12" duration="2" complete="0" expand="true">
+                        <depend id="181" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="181" name="Gastos" color="#8cb6ce" meeting="false" start="2017-05-16" duration="2" complete="0" expand="true">
+                        <depend id="183" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="131" name="modulo Consultas" meeting="false" start="2017-05-18" duration="4" complete="0" expand="true">
+                    <task id="183" name="Consultar Colmena" color="#8cb6ce" meeting="false" start="2017-05-18" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="187" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="185" name="Inventario" color="#8cb6ce" meeting="false" start="2017-05-22" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                    <task id="187" name="Reportes" color="#8cb6ce" meeting="false" start="2017-05-22" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                </task>
+            </task>
+        </task>
+        <task id="195" name="Pruebas del Aplicativo CAAC" color="#8cb6ce" meeting="false" start="2017-06-01" duration="2" complete="0" expand="true">
+            <depend id="225" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="225" name="Correccion de la Prueba" color="#8cb6ce" meeting="false" start="2017-06-05" duration="2" complete="0" expand="true">
+            <depend id="237" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="237" name="Prueba del Aplicativo CAAC2" color="#8cb6ce" meeting="false" start="2017-06-07" duration="2" complete="0" expand="true">
+            <depend id="207" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="207" name="Documentacion" color="#000000" meeting="false" start="2017-06-09" duration="16" complete="0" expand="false">
+            <depend id="250" type="2" difference="0" hardness="Strong"/>
+            <task id="210" name="SRS" color="#8cb6ce" meeting="false" start="2017-06-09" duration="2" complete="0" expand="true">
+                <depend id="217" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="214" name="Historia de Usuario" color="#8cb6ce" meeting="false" start="2017-06-09" duration="2" complete="0" expand="true">
+                <depend id="217" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="217" name="Casos de Uso" color="#8cb6ce" meeting="false" start="2017-06-13" duration="2" complete="0" expand="true">
+                <depend id="221" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="221" name="Diccionario de Datos" color="#8cb6ce" meeting="false" start="2017-06-15" duration="2" complete="0" expand="true">
+                <depend id="245" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="245" name="Manual de Usuario" color="#8cb6ce" meeting="false" start="2017-06-20" duration="10" complete="0" expand="true"/>
+        </task>
+        <task id="250" name="Capacitacion del Cliente" color="#8cb6ce" meeting="false" start="2017-07-06" duration="2" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="3" name="Jesus Andres Gonzalez A" function="Default:0" contacts="jesusandres548@gmail.com" phone=""/>
+        <resource id="4" name="Brandon Estiben Diosa" function="Default:0" contacts="bediosa0@misena.edu.co" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="93" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="95" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="102" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="121" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="127" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="144" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="146" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="148" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="150" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="152" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="154" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="185" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="214" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="217" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="221" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="225" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="207" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="245" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="250" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="88" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="93" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="95" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="106" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="102" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="129" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="183" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="187" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="210" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="217" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="221" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="225" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="207" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="245" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="250" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

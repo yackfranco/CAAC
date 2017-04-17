@@ -74,6 +74,22 @@ angular.module('CAAC').
                             controller: 'consultaReportesGraficosController',
                             templateUrl: 'app/template/ConsultasReportesGraficas2.html'
                         }).
+                        when('/consultaInventarios', {
+                            controller: 'consultasInventariosController',
+                            templateUrl: 'app/template/ConsultaInventarios.html'
+                        }).
+                        when('/consultaInventarios1', {
+                            controller: 'consultaInventarios1Controller',
+                            templateUrl: 'app/template/consultaInventarios1.html'
+                        }).
+                        when('/consultasColmena', {
+                            controller: 'consultasColmenaController',
+                            templateUrl: 'app/template/ConsultasColmena.html'
+                        }).
+                        when('/consultasColmenaBueno', {
+                            controller: 'consultasColmenaBuenoController',
+                            templateUrl: 'app/template/ConsultasColmenaBueno.html'
+                        }).
                         otherwise('/');
             }
         ]);
