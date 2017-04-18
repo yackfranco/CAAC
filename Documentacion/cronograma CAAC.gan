@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto CAAC (Control de Apiarios Aspro Campo)" company="SENA CTA - Semillero" webLink="http://" view-date="2017-04-27" view-index="0" gantt-divider-location="972" resource-divider-location="1142" version="2.8.2" locale="es">
+<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto CAAC (Control de Apiarios Aspro Campo)" company="SENA CTA - Semillero" webLink="http://" view-date="2017-03-03" view-index="0" gantt-divider-location="972" resource-divider-location="1142" version="2.8.2" locale="es">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd10" name="ID" width="81" order="0"/>
-        <field id="tpd3" name="Nombre" width="307" order="1"/>
-        <field id="tpd4" name="Fecha de inicio" width="90" order="2"/>
-        <field id="tpd5" name="Fecha de fin" width="91" order="3"/>
-        <field id="tpd9" name="Antecesores" width="101" order="4"/>
-        <field id="tpd7" name="Progreso" width="90" order="5"/>
-        <field id="tpd13" name="Recursos" width="208" order="6"/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd10" name="ID" width="80" order="0"/>
+        <field id="tpd3" name="Nombre" width="302" order="1"/>
+        <field id="tpd4" name="Fecha de inicio" width="89" order="2"/>
+        <field id="tpd5" name="Fecha de fin" width="90" order="3"/>
+        <field id="tpd9" name="Antecesores" width="99" order="4"/>
+        <field id="tpd7" name="Progreso" width="89" order="5"/>
+        <field id="tpd13" name="Recursos" width="204" order="6"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nombre" width="631" order="0"/>
@@ -176,8 +176,8 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Desarrollo de la Aplicacion" color="#000000" meeting="false" start="2017-03-03" duration="48" complete="0" expand="true">
-            <task id="2" name="Reestructuracion aplicativo CAAC a Angular" meeting="false" start="2017-03-03" duration="23" complete="0" expand="true">
+        <task id="0" name="Desarrollo de la Aplicacion" color="#000000" meeting="false" start="2017-03-03" duration="44" complete="0" expand="true">
+            <task id="2" name="Reestructuracion aplicativo CAAC a Angular" meeting="false" start="2017-03-03" duration="26" complete="0" expand="true">
                 <depend id="88" type="2" difference="0" hardness="Strong"/>
                 <task id="5" name="Modulo Registros" color="#000000" meeting="false" start="2017-03-03" duration="18" complete="0" expand="false">
                     <task id="7" name="Reestructuracion Registrar Usuario" color="#8cb6ce" meeting="false" start="2017-03-03" duration="2" complete="0" expand="true">
@@ -193,9 +193,7 @@
                     <task id="25" name="Reestructuracion Registro Marcos" color="#8cb6ce" meeting="false" start="2017-04-03" duration="2" complete="0" expand="true">
                         <depend id="23" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="23" name="Reestructuracion Registrar Inventario" color="#8cb6ce" meeting="false" start="2017-04-05" duration="2" complete="0" expand="true">
-                        <depend id="35" type="2" difference="0" hardness="Strong"/>
-                    </task>
+                    <task id="23" name="Reestructuracion Registrar Inventario" color="#8cb6ce" meeting="false" start="2017-04-05" duration="2" complete="0" expand="true"/>
                 </task>
                 <task id="9" name="Modulo Control" color="#000000" meeting="false" start="2017-03-03" duration="19" complete="0" expand="true">
                     <task id="11" name="Reestructuracion Control Apiarios" color="#8cb6ce" meeting="false" start="2017-03-03" duration="2" complete="0" expand="true">
@@ -214,78 +212,84 @@
                         <depend id="15" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
-                <task id="13" name="Modulo Consultas" color="#000000" meeting="false" start="2017-04-10" duration="4" complete="0" expand="true">
-                    <task id="15" name="Reestructuracion Consultar Colmena" color="#8cb6ce" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true">
+                <task id="13" name="Modulo Consultas" color="#000000" meeting="false" start="2017-04-10" duration="7" complete="0" expand="true">
+                    <task id="15" name="Reestructuracion Consultar Colmena" color="#8cb6ce" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true"/>
+                    <task id="35" name="Reestructuracion Inventario" color="#8cb6ce" meeting="false" start="2017-04-17" duration="2" complete="0" expand="true">
                         <depend id="37" type="2" difference="0" hardness="Strong"/>
-                        <task id="35" name="Reestructuracion Inventario" color="#8cb6ce" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true"/>
                     </task>
-                    <task id="37" name="Reestructuracion Reportes" color="#8cb6ce" meeting="false" start="2017-04-12" duration="2" complete="0" expand="true"/>
+                    <task id="37" name="Reestructuracion Reportes" color="#8cb6ce" meeting="false" start="2017-04-19" duration="2" complete="0" expand="true"/>
                 </task>
             </task>
-            <task id="88" name="Creacion de Base de Datos CAAC" color="#8cb6ce" meeting="false" start="2017-04-18" duration="2" complete="0" expand="true"/>
-            <task id="93" name="Programacion PHP" color="#000000" meeting="false" start="2017-05-02" duration="16" complete="0" expand="true">
-                <task id="95" name="Seguridad" color="#8cb6ce" meeting="false" start="2017-05-02" duration="2" complete="0" expand="true">
+            <task id="88" name="Creacion de Base de Datos CAAC" color="#8cb6ce" meeting="false" start="2017-04-21" duration="2" complete="0" expand="true">
+                <depend id="102" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="93" name="Programacion PHP" color="#000000" meeting="false" start="2017-04-25" duration="16" complete="0" expand="true">
+                <task id="95" name="Seguridad" color="#8cb6ce" meeting="false" start="2017-04-25" duration="2" complete="0" expand="true">
                     <depend id="127" type="2" difference="0" hardness="Strong"/>
                     <depend id="129" type="2" difference="0" hardness="Strong"/>
-                    <task id="102" name="Login" color="#8cb6ce" meeting="false" start="2017-05-02" duration="1" complete="0" expand="true">
+                    <task id="102" name="Login" color="#8cb6ce" meeting="false" start="2017-04-25" duration="1" complete="0" expand="true">
                         <depend id="106" type="2" difference="0" hardness="Strong"/>
                         <depend id="121" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="106" name="Restricciones" color="#8cb6ce" meeting="false" start="2017-05-03" duration="1" complete="0" expand="true"/>
-                    <task id="121" name="LogOut" color="#8cb6ce" meeting="false" start="2017-05-03" duration="1" complete="0" expand="true"/>
+                    <task id="106" name="Restricciones" color="#8cb6ce" meeting="false" start="2017-04-26" duration="1" complete="0" expand="true">
+                        <depend id="173" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="121" name="LogOut" color="#8cb6ce" meeting="false" start="2017-04-26" duration="1" complete="0" expand="true">
+                        <depend id="144" type="2" difference="0" hardness="Strong"/>
+                    </task>
                 </task>
-                <task id="127" name="modulo Registros" color="#8cb6ce" meeting="false" start="2017-05-04" duration="12" complete="0" expand="false">
+                <task id="127" name="modulo Registros" color="#8cb6ce" meeting="false" start="2017-04-27" duration="12" complete="0" expand="true">
                     <depend id="185" type="2" difference="0" hardness="Strong"/>
-                    <task id="144" name="Registrar Usuario" color="#8cb6ce" meeting="false" start="2017-05-04" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                    <task id="144" name="Registrar Usuario" color="#8cb6ce" meeting="false" start="2017-04-27" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                         <depend id="146" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="146" name="Registrar Apiarios" color="#8cb6ce" meeting="false" start="2017-05-08" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                    <task id="146" name="Registrar Apiarios" color="#8cb6ce" meeting="false" start="2017-05-02" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                         <depend id="148" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="148" name="Registrar Colmenas" color="#8cb6ce" meeting="false" start="2017-05-10" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                    <task id="148" name="Registrar Colmenas" color="#8cb6ce" meeting="false" start="2017-05-04" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                         <depend id="150" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="150" name="Registro Camaras" color="#8cb6ce" meeting="false" start="2017-05-12" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                    <task id="150" name="Registro Camaras" color="#8cb6ce" meeting="false" start="2017-05-08" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                         <depend id="152" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="152" name="Registro Marcos" color="#8cb6ce" meeting="false" start="2017-05-16" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                    <task id="152" name="Registro Marcos" color="#8cb6ce" meeting="false" start="2017-05-10" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                         <depend id="154" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="154" name="Registrar Inventario" color="#8cb6ce" meeting="false" start="2017-05-18" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                    <task id="154" name="Registrar Inventario" color="#8cb6ce" meeting="false" start="2017-05-12" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
                 </task>
-                <task id="129" name="modulo Control" color="#8cb6ce" meeting="false" start="2017-05-04" duration="10" complete="0" expand="false">
-                    <task id="173" name="Control Apiarios" color="#8cb6ce" meeting="false" start="2017-05-04" duration="2" complete="0" expand="true">
+                <task id="129" name="modulo Control" color="#8cb6ce" meeting="false" start="2017-04-27" duration="10" complete="0" expand="true">
+                    <task id="173" name="Control Apiarios" color="#8cb6ce" meeting="false" start="2017-04-27" duration="2" complete="0" expand="true">
                         <depend id="175" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="175" name="Inventario" color="#8cb6ce" meeting="false" start="2017-05-08" duration="2" complete="0" expand="true">
+                    <task id="175" name="Inventario" color="#8cb6ce" meeting="false" start="2017-05-02" duration="2" complete="0" expand="true">
                         <depend id="177" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="177" name="Prduccion de Miel" color="#8cb6ce" meeting="false" start="2017-05-10" duration="2" complete="0" expand="true">
+                    <task id="177" name="Prduccion de Miel" color="#8cb6ce" meeting="false" start="2017-05-04" duration="2" complete="0" expand="true">
                         <depend id="179" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="179" name="Control de Abeja Reina" color="#8cb6ce" meeting="false" start="2017-05-12" duration="2" complete="0" expand="true">
+                    <task id="179" name="Control de Abeja Reina" color="#8cb6ce" meeting="false" start="2017-05-08" duration="2" complete="0" expand="true">
                         <depend id="181" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="181" name="Gastos" color="#8cb6ce" meeting="false" start="2017-05-16" duration="2" complete="0" expand="true">
+                    <task id="181" name="Gastos" color="#8cb6ce" meeting="false" start="2017-05-10" duration="2" complete="0" expand="true">
                         <depend id="183" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
-                <task id="131" name="modulo Consultas" meeting="false" start="2017-05-18" duration="4" complete="0" expand="true">
-                    <task id="183" name="Consultar Colmena" color="#8cb6ce" meeting="false" start="2017-05-18" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <task id="131" name="modulo Consultas" meeting="false" start="2017-05-12" duration="4" complete="0" expand="true">
+                    <task id="183" name="Consultar Colmena" color="#8cb6ce" meeting="false" start="2017-05-12" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                         <depend id="187" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="185" name="Inventario" color="#8cb6ce" meeting="false" start="2017-05-22" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
-                    <task id="187" name="Reportes" color="#8cb6ce" meeting="false" start="2017-05-22" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                    <task id="185" name="Inventario" color="#8cb6ce" meeting="false" start="2017-05-16" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                    <task id="187" name="Reportes" color="#8cb6ce" meeting="false" start="2017-05-16" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                        <depend id="195" type="2" difference="0" hardness="Strong"/>
+                    </task>
                 </task>
             </task>
         </task>
-        <task id="195" name="Pruebas del Aplicativo CAAC" color="#8cb6ce" meeting="false" start="2017-06-01" duration="2" complete="0" expand="true">
+        <task id="195" name="Pruebas del Aplicativo CAAC" color="#8cb6ce" meeting="false" start="2017-05-18" duration="2" complete="0" expand="true">
             <depend id="225" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="225" name="Correccion de la Prueba" color="#8cb6ce" meeting="false" start="2017-06-05" duration="2" complete="0" expand="true">
-            <depend id="237" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="237" name="Prueba del Aplicativo CAAC2" color="#8cb6ce" meeting="false" start="2017-06-07" duration="2" complete="0" expand="true">
+        <task id="225" name="Correccion de la Prueba" color="#8cb6ce" meeting="false" start="2017-05-22" duration="2" complete="0" expand="true"/>
+        <task id="237" name="Prueba del Aplicativo CAAC2" color="#8cb6ce" meeting="false" start="2017-06-01" duration="2" complete="0" expand="true">
             <depend id="207" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="207" name="Documentacion" color="#000000" meeting="false" start="2017-06-09" duration="16" complete="0" expand="false">
