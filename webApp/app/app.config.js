@@ -90,6 +90,10 @@ angular.module('CAAC').
                             controller: 'consultasColmenaBuenoController',
                             templateUrl: 'app/template/ConsultasColmenaBueno.html'
                         }).
+                                when('/menuRegistrar', {
+                            controller: 'controller.menuRegistrar',
+                            templateUrl: 'app/template/MenuRegistrar.html'
+                        }).
                         otherwise('/');
             }
         ]);
