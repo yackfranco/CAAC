@@ -11,7 +11,7 @@
     </head>
     <body>
         
-        <div class="container container-fluid" ng-view ng-cloak></div>
+        <div class="" ng-view ng-cloak></div>
         
         <script src="js/angular-1.6.1/angular.min.js" type="text/javascript"></script>
         <script src="js/angular-1.6.1/angular-route.min.js" type="text/javascript"></script>
@@ -38,6 +38,7 @@
         <script src="app/controller/controller.menuRegistrar.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarApiarios.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarCamaras.js" type="text/javascript"></script>
+        <script src="app/controller/controller.consultasInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarColmenas.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarMarcos.js" type="text/javascript"></script>
