@@ -94,6 +94,10 @@ angular.module('CAAC').
                             controller: 'controller.menuRegistrar',
                             templateUrl: 'app/template/MenuRegistrar.html'
                         }).
+                                 when('/MenuConsultas', {
+                            controller: 'controller.menuConsultas',
+                            templateUrl: 'app/template/MenuConsultas.html'
+                        }).
                         otherwise('/');
             }
         ]);
