@@ -1,154 +1,142 @@
-        
-        <div class=" container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="le nav nav-tabs btn-lg">
-                        <li role="presentation" class=""><a href="#!/MenuRegistrar">Registros</a></li>
-                        <li role="presentation" class=""><a href="#!/MenuControl">Control</a></li>
-                        <li role="presentation" class="active"><a href="#!/MenuConsultas">Consultas</a></li>
-                    </ul>
-                </div>
+<div class=" container-fluid">
+
+    <ng-include src="'app/template/partial/menuHeadConsultas.html'"></ng-include>
+
+    <div class="row">
+
+        <ng-include src="'app/template/partial/subMenuConsultas.html'"></ng-include>
+
+        <div class="col-lg-8 col-xs-9 col-lg-offset-1 col-xs-offset-2">
+
+            <div class="col-lg-8 col-xs-9 Titulo">
+                Consultar Inventarios
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
-                   <a href="#!/consultasColmena" class="list-group-item">Consultar Colmena</a>
-                    <a href="#!/consultaInventarios" class="list-group-item active">Inventario</a>
-                    <a href="#!/ConsultaReportes" class="list-group-item">Reportes</a>
-                </div>
+            <form class="col-lg-offset-1 col-lg-8 col-xs-offset-1 col-xs-5 margenformulario">
 
-                <div class="col-lg-8 col-xs-9 col-lg-offset-1 col-xs-offset-2">
+                <div class="row">
 
-                    <div class="col-lg-8 col-xs-9 Titulo">
-                        Consultar Inventarios
+                    <div class="col-lg-12 col-xs-12">
+
+                        <div class="form-group">
+
+                            <div class="col-lg-2 col-xs-4">
+                                <label >Valor de Gasto</label>
+                            </div>
+                            <div class="col-lg-7 col-xs-5">
+                                <input type="text" class="form-control" name="Codigo" placeholder="Valor Gastos">
+                            </div>
+                            <div class="col-lg-3 col-xs-3">
+                                <button type="submit" class="btn btn-info btnbuscarinventario">Buscar</button>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <form class="col-lg-offset-1 col-lg-8 col-xs-offset-1 col-xs-5 margenformulario">
-
-                        <div class="row">
-
-                            <div class="col-lg-12 col-xs-12">
-
-                                <div class="form-group">
-
-                                    <div class="col-lg-2 col-xs-4">
-                                        <label >Valor de Gasto</label>
-                                    </div>
-                                    <div class="col-lg-7 col-xs-5">
-                                        <input type="text" class="form-control" name="Codigo" placeholder="Valor Gastos">
-                                    </div>
-                                    <div class="col-lg-3 col-xs-3">
-                                        <button type="submit" class="btn btn-info btnbuscarinventario">Buscar</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="rebusinv">
-                        
-                            <div class="row labelsconinv">
-
-                                <div class="col-lg-12 col-xs-12">
-
-                                    <div class="form-group">
-
-                                        <div class="col-lg-2">
-                                            <label class="">Pasilla</label>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <input type="number" class="form-control " name="Codigo" placeholder="Cantidad de Pasilla">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <label class="">en Kilos</label>
-                                        </div>
-                                        <div class="estadoinvb col-lg-4">
-                                            <label class="conestado">Suficiente</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="row labelsconinv">
-
-                                <div class="form-group">
-
-                                    <div class="col-lg-12">
-
-                                        <div class="col-lg-2">
-                                            <label class="">Veneno</label>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <input type="number" class="form-control " name="Codigo" placeholder="Cantidad de Veneno">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <label class="">en Kilos</label>
-                                        </div>
-                                        <div class="estadoinvb col-lg-4">
-                                            <label class="conestado">Suficiente</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="row labelsconinv">
-
-                                <div class="form-group">
-
-                                    <div class="col-lg-12">
-
-                                        <div class="col-lg-2">
-                                            <label class="">ACPM</label>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <input type="number" class="form-control " name="Codigo" placeholder="Cantidad de ACPM">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <label class="">en Litros</label>
-                                        </div>
-                                        <div class="estadoinvm col-lg-4">
-                                            <label class="conestado">Insuficiente</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="row labelsconinv">
-
-                                <div class="form-group">
-
-                                    <div class="col-lg-12">
-
-                                        <div class="col-lg-2">
-                                            <label class="">Atomizador</label>
-                                        </div>
-                                        <div class="estadoinvm col-lg-offset-6 col-lg-4">
-                                            <label class="conestado">Malo</label>
-                                        </div>
-                                        
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                    </form>
                 </div>
-            </div>
+
+                <div class="rebusinv">
+
+                    <div class="row labelsconinv">
+
+                        <div class="col-lg-12 col-xs-12">
+
+                            <div class="form-group">
+
+                                <div class="col-lg-2">
+                                    <label class="">Pasilla</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="number" class="form-control " name="Codigo" placeholder="Cantidad de Pasilla">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="">en Kilos</label>
+                                </div>
+                                <div class="estadoinvb col-lg-4">
+                                    <label class="conestado">Suficiente</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row labelsconinv">
+
+                        <div class="form-group">
+
+                            <div class="col-lg-12">
+
+                                <div class="col-lg-2">
+                                    <label class="">Veneno</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="number" class="form-control " name="Codigo" placeholder="Cantidad de Veneno">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="">en Kilos</label>
+                                </div>
+                                <div class="estadoinvb col-lg-4">
+                                    <label class="conestado">Suficiente</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row labelsconinv">
+
+                        <div class="form-group">
+
+                            <div class="col-lg-12">
+
+                                <div class="col-lg-2">
+                                    <label class="">ACPM</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="number" class="form-control " name="Codigo" placeholder="Cantidad de ACPM">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="">en Litros</label>
+                                </div>
+                                <div class="estadoinvm col-lg-4">
+                                    <label class="conestado">Insuficiente</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row labelsconinv">
+
+                        <div class="form-group">
+
+                            <div class="col-lg-12">
+
+                                <div class="col-lg-2">
+                                    <label class="">Atomizador</label>
+                                </div>
+                                <div class="estadoinvm col-lg-offset-6 col-lg-4">
+                                    <label class="conestado">Malo</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
         </div>
-        
-        <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
-       
+    </div>
+</div>
+
+<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>

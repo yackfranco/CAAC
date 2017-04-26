@@ -1,20 +1,10 @@
 <div class=" container-fluid">
-    <div class="row">
-        <div class="col-lg-12">
-            <ul class="le nav nav-tabs btn-lg">
-                <li role="presentation" class=""><a href="#!/MenuRegistrar">Registros</a></li>
-                <li role="presentation" class=""><a href="#!/MenuControl">Control</a></li>
-                <li role="presentation" class="active"><a href="#!/MenuConsultas">Consultas</a></li>
-            </ul>
-        </div>
-    </div>
+
+    <ng-include src="'app/template/partial/menuHeadConsultas.html'"></ng-include>
 
     <div class="row">
-        <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
-            <a href="#!/ConsultasColmena" class="list-group-item active">Consultar Colmena</a>
-            <a href="#!/ConsultaInventarios" class="list-group-item">Inventario</a>
-            <a href="#!/ConsultaReportes" class="list-group-item">Reportes</a>
-        </div>
+
+        <ng-include src="'app/template/partial/subMenuConsultas.html'"></ng-include>
 
         <div class="col-lg-9 col-xs-9">
             <div class="row">
@@ -93,7 +83,7 @@
                         </tr>
                     </table>
                     <div class="col-lg-offset-10 col-lg-2">
-                        <a href="ConsultasColmena.html"><button class="btn btn-block btn-group-lg btn-default">Atras</button></a>
+                        <a href="#!/consultasColmena"><button class="btn btn-block btn-group-lg btn-default">Atras</button></a>
                     </div>
                 </div>
             </div>

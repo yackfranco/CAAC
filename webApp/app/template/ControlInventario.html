@@ -1,88 +1,77 @@
-        <div class=" container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="le nav nav-tabs btn-lg">
-                        <li role="presentation" class=""><a href="#!/MenuRegistrar">Registros</a></li>
-                        <li role="presentation" class="active"><a href="#!/MenuControl">Control</a></li>
-                        <li role="presentation" class=""><a href="#!/MenuConsultas">Consultas</a></li>
-                    </ul>
-                </div>
+<div class=" container-fluid">
+
+    <ng-include src="'app/template/partial/menuHeadControl.html'"></ng-include>
+
+    <div class="row">
+        
+       <ng-include src="'app/template/partial/subMenuControl.html'"></ng-include>
+
+        <div class="col-lg-9 col-xs-9">
+            <div class="Titulo">
+                Inventario
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
-                    <a href="#!/ControlApiarios" class="list-group-item">Control Apiarios</a>
-                    <a href="#!/ControlInventario" class="list-group-item active">Inventario</a>
-                    <a href="#!/ControlProduccionMiel" class="list-group-item">Produccion De Miel</a>
-                    <a href="#!/ControlAbejaReina" class="list-group-item">Control De Aveja Reina</a>
-                    <a href="#!/ControlGastos" class="list-group-item">Gastos</a>
+
+            <div class="col-lg-6 margenformulario">
+                <div class="col-lg-9 margenformulario">
+                    <label >Apiario</label>
+                    <select class="form-control">
+                        <option>Apiario 1</option>
+                        <option>Apiario 2</option>
+                        <option>Apiario 3</option>
+                        <option>Apiario 4</option>
+                        <option>Apiario 5</option>
+                    </select>
                 </div>
-                <div class="col-lg-9 col-xs-9">
-                    <div class="Titulo">
-                        Inventario
+                <form>
+                    <div class="col-lg-9">
+                        <label >Pasillas</label>
+                        <input type="text" class="form-control" name="Pasillas" placeholder="Pasillas">
+                    </div>
+                    <div class="col-lg-3 ">
+                        <label class="pesoinv">Kilos</label>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <label>Veneno</label>
+                        <input type="text" class="form-control" name="Veneno" placeholder="Veneno">
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="pesoinv">Kilos</label>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <label>ACPM</label>
+                        <input type="text" class="form-control" name="ACPM" placeholder="ACPM">
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="pesoinv">Litros</label>
+                    </div>
+                    <div class="col-lg-9">
+                        <label>Atomizador</label>
+                        <select class="form-control">
+                            <option>Bueno</option>
+                            <option>Regular</option>
+                            <option>Malo</option>
+                        </select>
                     </div>
 
 
-                    <div class="col-lg-6 margenformulario">
-                        <div class="col-lg-9 margenformulario">
-                            <label >Apiario</label>
-                            <select class="form-control">
-                                <option>Apiario 1</option>
-                                <option>Apiario 2</option>
-                                <option>Apiario 3</option>
-                                <option>Apiario 4</option>
-                                <option>Apiario 5</option>
-                            </select>
-                        </div>
-                        <form>
-                            <div class="col-lg-9">
-                                <label >Pasillas</label>
-                                <input type="text" class="form-control" name="Pasillas" placeholder="Pasillas">
-                            </div>
-                            <div class="col-lg-3 ">
-                                <label class="pesoinv">Kilos</label>
-                            </div>
-                            
-                            <div class="col-lg-9">
-                                <label>Veneno</label>
-                                <input type="text" class="form-control" name="Veneno" placeholder="Veneno">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="pesoinv">Kilos</label>
-                            </div>
-                            
-                            <div class="col-lg-9">
-                                <label>ACPM</label>
-                                <input type="text" class="form-control" name="ACPM" placeholder="ACPM">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="pesoinv">Litros</label>
-                            </div>
-                            <div class="col-lg-9">
-                                <label>Atomizador</label>
-                               <select class="form-control">
-                                <option>Bueno</option>
-                                <option>Regular</option>
-                                <option>Malo</option>
-                            </select>
-                            </div>
-                            
-                            
-                        </form>
+                </form>
 
-                    </div>
-
-                    <div class="col-lg-6 margenformulario">
-                        <div class="row text-center ">
-                            <label><h3>Observaciones</h3></label>
-                        </div>
-                        <textarea class="btn-lg btn-block TAcontrolInventario"></textarea>
-                    </div>
-
-
-                </div>
             </div>
+
+            <div class="col-lg-6 margenformulario">
+                <div class="row text-center ">
+                    <label><h3>Observaciones</h3></label>
+                </div>
+                <textarea class="btn-lg btn-block TAcontrolInventario"></textarea>
+            </div>
+
+
         </div>
     </div>
-    <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+</div>
+</div>
+<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
 
 

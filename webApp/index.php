@@ -23,6 +23,9 @@
         <script src="app/app.js" type="text/javascript"></script>
         <script src="app/app.config.js" type="text/javascript"></script>
         
+        <script src="app/controller/controller.consultarColmena.js" type="text/javascript"></script>
+        <script src="app/controller/controller.consultarColmenaBueno.js" type="text/javascript"></script>
+        <script src="app/controller/controller.consultasInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultascolmenamalo.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultascolmenaregular.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultasreportes.js" type="text/javascript"></script>
@@ -34,16 +37,16 @@
         <script src="app/controller/controller.controlInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.controlProduccionMiel.js" type="text/javascript"></script>
         <script src="app/controller/controller.index.js" type="text/javascript"></script>
+        <script src="app/controller/controller.menuConsultas.js" type="text/javascript"></script>
         <script src="app/controller/controller.menuControl.js" type="text/javascript"></script>
         <script src="app/controller/controller.menuRegistrar.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarApiarios.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarCamaras.js" type="text/javascript"></script>
-        <script src="app/controller/controller.consultasInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarColmenas.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarMarcos.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarUsuario.js" type="text/javascript"></script>
-
+        
     </body>
 </html>
   

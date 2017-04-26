@@ -90,12 +90,12 @@ angular.module('CAAC').
                             controller: 'consultasColmenaBuenoController',
                             templateUrl: 'app/template/ConsultasColmenaBueno.html'
                         }).
-                                when('/MenuRegistrar', {
-                            controller: 'controller.menuRegistrar',
+                        when('/MenuRegistrar', {
+                            controller: 'menuRegistrarController',
                             templateUrl: 'app/template/MenuRegistrar.html'
                         }).
-                                 when('/MenuConsultas', {
-                            controller: 'controller.menuConsultas',
+                        when('/MenuConsultas', {
+                            controller: 'menuConsultasController',
                             templateUrl: 'app/template/MenuConsultas.html'
                         }).
                         otherwise('/');

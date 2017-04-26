@@ -1,48 +1,36 @@
-        <div class=" container-fluid">
+<div class=" container-fluid">
+
+    <ng-include src="'app/template/partial/menuHeadConsultas.html'"></ng-include>
+
+    <div class="row">
+
+        <ng-include src="'app/template/partial/subMenuConsultas.html'"></ng-include>
+
+        <div class="col-lg-9 col-xs-9">
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="le nav nav-tabs btn-lg">
-                       <li role="presentation" class=""><a href="#!/MenuRegistrar">Registros</a></li>
-                        <li role="presentation" class=""><a href="#!/MenuControl">Control</a></li>
-                        <li role="presentation" class="active"><a href="#!/MenuConsultas">Consultas</a></li>
-                    </ul>
+                <div class="text-center Titulo tituloconsltarcol ">
+                    Consultas
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
-                   <a href="#!/consultasColmena" class="list-group-item active">Consultar Colmena</a>
-                    <a href="#!/consultaInventarios" class="list-group-item ">Inventario</a>
-                    <a href="#!/ConsultaReportes" class="list-group-item">Reportes</a>
 
-                </div>
+            <div class="row ">
+                <div class="col-lg-offset-2 col-lg-8">
 
-                <div class="col-lg-9 col-xs-9">
-                    <div class="row">
-                        <div class="text-center Titulo tituloconsltarcol ">
-                            Consultas
-                        </div>
+                    <div class="col-lg-4">
+                        <a href="#!/consultasColmenaBueno"> <center>  <button type="button" class="btn btn-lg btn-success btnconsultarcol"> Bueno </button></center></a>
                     </div>
-                    
-
-                    <div class="row ">
-                        <div class="col-lg-offset-2 col-lg-8">
-
-                            <div class="col-lg-4">
-                                <a href="#!/consultasColmenaBueno"> <center>  <button type="button" class="btn btn-lg btn-success btnconsultarcol"> Bueno </button></center></a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="#!/ConsultaColmenaRegular"> <center> <button type="button" class="btn btn-lg btn-warning btnconsultarcol"> Regular </button></center></a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="#!/ConsultaColmenaMala"> <center>  <button type="button" class="btn btn-lg btn-danger btnconsultarcol"> Malo </button></center></a>
-                            </div>
-                        </div>
+                    <div class="col-lg-4">
+                        <a href="#!/ConsultaColmenaRegular"> <center> <button type="button" class="btn btn-lg btn-warning btnconsultarcol"> Regular </button></center></a>
                     </div>
-
-
+                    <div class="col-lg-4">
+                        <a href="#!/ConsultaColmenaMala"> <center>  <button type="button" class="btn btn-lg btn-danger btnconsultarcol"> Malo </button></center></a>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-        <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
-        
+    </div>
+</div>
+<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>

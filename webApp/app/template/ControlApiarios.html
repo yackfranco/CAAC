@@ -1,23 +1,10 @@
         <div class=" container-fluid">
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="le nav nav-tabs btn-lg">
-                      <li role="presentation" class=""><a href="#!/MenuRegistrar">Registros</a></li>
-                        <li role="presentation" class="active"><a href="#!/MenuControl">Control</a></li>
-                        <li role="presentation" class=""><a href="#!/MenuConsultas">Consultas</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ng-include src="'app/template/partial/menuHeadControl.html'"></ng-include>
 
             <div class="row">
-                <div class="col-lg-3 col-xs-3 list-group btn-lg botones le">
-                 <a href="#!/ControlApiarios" class="list-group-item active">Control Apiarios</a>
-                    <a href="#!/ControlInventario" class="list-group-item">Inventario</a>
-                    <a href="#!/ControlProduccionMiel" class="list-group-item">Produccion De Miel</a>
-                    <a href="#!/ControlAbejaReina" class="list-group-item">Control De Aveja Reina</a>
-                    <a href="#!/ControlGastos" class="list-group-item">Gastos</a>
-                </div>
+                
+               <ng-include src="'app/template/partial/subMenuControl.html'"></ng-include>
 
                 <div class="col-lg-8 col-xs-9 col-lg-offset-1 col-xs-offset-2">
 
