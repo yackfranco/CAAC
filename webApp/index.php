@@ -2,7 +2,7 @@
 <html ng-app="CAAC">
     <head>
         <meta charset="UTF-8">
-        <title>CAAAC</title>
+        <title>CAAC</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
@@ -26,6 +26,7 @@
         <script src="app/controller/controller.consultarColmena.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultarColmenaBueno.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultasInventario.js" type="text/javascript"></script>
+        <script src="app/controller/controller.consultasInventario1.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultascolmenamalo.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultascolmenaregular.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultasreportes.js" type="text/javascript"></script>
