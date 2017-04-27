@@ -26,6 +26,7 @@
         <script src="app/controller/controller.consultarColmena.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultarColmenaBueno.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultasInventario.js" type="text/javascript"></script>
+        <script src="app/controller/controller.consultasInventario1.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultascolmenamalo.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultascolmenaregular.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultasreportes.js" type="text/javascript"></script>
