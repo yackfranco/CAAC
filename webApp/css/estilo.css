@@ -275,7 +275,10 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
-
+.tamañoImagenes{
+    margin-left: 5px;
+    font-size: 20px;
+}
 
 
 
@@ -392,4 +395,8 @@ input[type=number] {
 
 .colorpanelmedioCR{
   background-image: linear-gradient(to bottom,#ffcc33 0,#faf2cc 100%);  
+}
+
+.margendatagrid{
+    margin-top: 20px;
 }
