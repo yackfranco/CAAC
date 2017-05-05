@@ -2,13 +2,14 @@
     <ng-include src="'app/template/partial/menuHeadRegistro.html'"></ng-include>
     <div class="row">
         <ng-include src="'app/template/partial/subMenuRegistro.html'"></ng-include>
-        <div class="col-lg-7 col-xs-7 col-lg-offset-2 col-xs-offset-2">
-
-            <div class="col-lg-8 Titulo">
-                Registrar Apiarios
+        <div class="col-lg-9 col-xs-9 ">
+            <!--titulo-->
+            <div class="col-lg-12 Titulo">
+                Registrar Usuario
             </div>
-            <form class="col-lg-offset-2 col-lg-4 col-xs-offset-1 col-xs-5 margenformulario">
-                <div class="form-group">
+            <div class="col-lg-6">
+                <form class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8">
+                   <div class="form-group">
                     <label >Nombre del Apiario</label>
                     <input type="text" class="form-control" name="NombreApiario" placeholder="Nombre del Apiario">
                 </div>
@@ -20,14 +21,44 @@
                     <label >Codigo del Apiario</label>
                     <input type="text" class="form-control" name="CodigoApiario" placeholder="Codigo del Apiario">
                 </div>
+                    <div class="row"style="text-align: right">
+                        <button type="submit" class="btn btn-success margenboton ">Guardar</button>
+                        <button type="submit" class="btn btn-warning margenboton ">Cancelar</button>
+                    </div>
+                </form>
+            </div>
 
-                <div class="text-center"> 
-                    <button type="submit" class="btn btn-success btn-lg margenboton ">Guardar</button>
-                    <button type="submit" class="btn btn-warning btn-lg margenboton ">Cancelar</button>
+            <div class="col-lg-6">
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Gestion de Usuarios</div>
+                    <table class="table table-bordered">
+                    <tr>
+                        <th>Nombre del Apiario</th>
+                        <th>Ubicacion</th>
+                        <th>Codigo</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                    <tbody>
+                        <tr>
+                            <td>Apiario 1</td>
+                            <td>Lugar 1</td>
+                            <td>123</td>
+                            <td><i class=" glyphicon glyphicon-pencil tamañoImagenes"></i><i class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+                
 
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+    
+    

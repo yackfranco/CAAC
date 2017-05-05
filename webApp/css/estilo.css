@@ -253,9 +253,6 @@ a {
 
 /*------------------------Cambiar el Estilo de los botones--------------------------------------*/
 
-.margenformulario{
-    margin-top: 50px;
-}
 
 .margenboton{
     margin-top: 40px;
@@ -275,7 +272,10 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
-
+.tamañoImagenes{
+    margin-left: 5px;
+    font-size: 20px;
+}
 
 
 
@@ -286,6 +286,7 @@ input[type=number] {
     font-weight: bold;
     font-size: 50px;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .margentexbox{
@@ -392,4 +393,8 @@ input[type=number] {
 
 .colorpanelmedioCR{
   background-image: linear-gradient(to bottom,#ffcc33 0,#faf2cc 100%);  
+}
+
+.margendatagrid{
+    margin-top: 20px;
 }

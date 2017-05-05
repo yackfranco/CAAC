@@ -3,73 +3,178 @@
     <div class="row">
         <ng-include src="'app/template/partial/subMenuRegistro.html'"></ng-include>
 
-        <div class="col-lg-7 col-xs-7 col-lg-offset-2 col-xs-offset-2">
 
-            <div class="col-lg-8 Titulo">
+        <div class="col-lg-9 col-xs-9 ">
+            <!--titulo-->
+            <div class="col-lg-12 Titulo">
                 Registrar Inventario
             </div>
-
-            <form class="col-lg-6 col-xs-5 col-lg-offset-1 col-xs-1 margenformulario">
-
-                <div class="col-lg-4">
-                    <label >Apiario</label>
-                    <select class="form-control">
-                        <option>Apiario 1</option>
-                        <option>Apiario 2</option>
-                        <option>Apiario 3</option>
-                        <option>Apiario 4</option>
-                        <option>Apiario 5</option>
-                    </select>
-                </div>
-
-                <div class="col-lg-9 ">
-                    <div class="form-group">
-                        <label >Bulto de Pasilla</label>
-                        <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+            <div class="col-lg-6">
+                <form class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8">
+                    <div class="col-lg-4">
+                        <label >Apiario</label>
+                        <select class="form-control">
+                            <option>Apiario 1</option>
+                            <option>Apiario 2</option>
+                            <option>Apiario 3</option>
+                            <option>Apiario 4</option>
+                            <option>Apiario 5</option>
+                        </select>
                     </div>
-                </div>
 
-                <div class="col-lg-3">
-                    <label class="pesoinv">en Kilos</label>
-                </div>
-
-                <div class="col-lg-9">
-                    <div class="form-group">
-                        <label >Cantidad de Veneno</label>
-                        <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                    <div class="col-lg-9 ">
+                        <div class="form-group">
+                            <label >Bulto de Pasilla</label>
+                            <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <label class="pesoinv">en Kilos</label>
-                </div>
 
-                <div class="col-lg-9">
-                    <div class="form-group">
-                        <label >Cantidad de ACPM</label>
-                        <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                    <div class="col-lg-3">
+                        <label class="pesoinv">en Kilos</label>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <label class="pesoinv">en Litros</label>
+
+                    <div class="col-lg-9">
+                        <div class="form-group">
+                            <label >Cantidad de Veneno</label>
+                            <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="pesoinv">en Kilos</label>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="form-group">
+                            <label >Cantidad de ACPM</label>
+                            <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="pesoinv">en Litros</label>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <label >Atomizador</label>
+                        <input id="input-1" type="checkbox">
+                        <script>
+                            $('#input-1').checkboxpicker({
+                                html: true,
+                                offLabel: '<span class="glyphicon glyphicon-remove">',
+                                onLabel: '<span class="glyphicon glyphicon-ok">'
+                            });
+                        </script>
+                    </div>
+                    <div class="row"style="text-align: right">
+                        <button type="submit" class="btn btn-success margenboton ">Guardar</button>
+                        <button type="submit" class="btn btn-warning margenboton ">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Gestion de Inventario</div>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Nombre del Apiario</th>
+                            <th>Bulto de pasillas</th>
+                            <th>Cantidad de Veneno</th>
+                            <th>Cantidad de ACPM</th>
+                            <th>Acciones</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Apiario 1</td>
+                                <td>100</td>
+                                <td>200</td>
+                                <td>310</td>
+                                <td><i class=" glyphicon glyphicon-pencil tamañoImagenes"></i><i class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <div class="col-lg-12">
-                    <label >Atomizador</label>
-                    <input id="input-1" type="checkbox">
-                    <script>
-                        $('#input-1').checkboxpicker({
-                            html: true,
-                            offLabel: '<span class="glyphicon glyphicon-remove">',
-                            onLabel: '<span class="glyphicon glyphicon-ok">'
-                        });
-                    </script>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+
+
+
+    <!--        <div class="col-lg-7 col-xs-7 col-lg-offset-2 col-xs-offset-2">
+    
+                <div class="col-lg-8 Titulo">
+                    Registrar Inventario
                 </div>
-                <div class="text-center col-lg-12"> 
-                    <button type="submit" class="btn btn-success btn-lg margenboton ">Guardar</button>
-                    <button type="submit" class="btn btn-warning btn-lg margenboton ">Cancelar</button>
-                </div>
-            </form>
+    
+                <form class="col-lg-6 col-xs-5 col-lg-offset-1 col-xs-1 margenformulario">
+    
+                    <div class="col-lg-4">
+                        <label >Apiario</label>
+                        <select class="form-control">
+                            <option>Apiario 1</option>
+                            <option>Apiario 2</option>
+                            <option>Apiario 3</option>
+                            <option>Apiario 4</option>
+                            <option>Apiario 5</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-lg-9 ">
+                        <div class="form-group">
+                            <label >Bulto de Pasilla</label>
+                            <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3">
+                        <label class="pesoinv">en Kilos</label>
+                    </div>
+    
+                    <div class="col-lg-9">
+                        <div class="form-group">
+                            <label >Cantidad de Veneno</label>
+                            <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="pesoinv">en Kilos</label>
+                    </div>
+    
+                    <div class="col-lg-9">
+                        <div class="form-group">
+                            <label >Cantidad de ACPM</label>
+                            <input type="text" class="form-control" name="Codigo" placeholder="Codigo Colmena">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="pesoinv">en Litros</label>
+                    </div>
+    
+                    <div class="col-lg-12">
+                        <label >Atomizador</label>
+                        <input id="input-1" type="checkbox">
+                        <script>
+                            $('#input-1').checkboxpicker({
+                                html: true,
+                                offLabel: '<span class="glyphicon glyphicon-remove">',
+                                onLabel: '<span class="glyphicon glyphicon-ok">'
+                            });
+                        </script>
+                    </div>
+                    <div class="text-center col-lg-12"> 
+                        <button type="submit" class="btn btn-success btn-lg margenboton ">Guardar</button>
+                        <button type="submit" class="btn btn-warning btn-lg margenboton ">Cancelar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+    <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>-->

@@ -2,8 +2,102 @@
     <ng-include src="'app/template/partial/menuHeadRegistro.html'"></ng-include>
     <div class="row">
         <ng-include src="'app/template/partial/subMenuRegistro.html'"></ng-include>
-        <div class="col-lg-7 col-xs-7 col-lg-offset-2 col-xs-offset-2">
+         <div class="col-lg-9 col-xs-9 ">
             <!--titulo-->
+            <div class="col-lg-12 Titulo">
+                Registrar Camaras
+            </div>
+            <div class="col-lg-6">
+                <form class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8">
+                   <div class="col-lg-6">
+                    <label >Apiario</label>
+                    <select class="form-control">
+                        <option>Apiario 1</option>
+                        <option>Apiario 2</option>
+                        <option>Apiario 3</option>
+                        <option>Apiario 4</option>
+                        <option>Apiario 5</option>
+                    </select>
+                </div>
+                <div class="col-lg-6">
+                    <label >Colmena</label>
+                    <select class="form-control">
+                        <option>Colmena 1</option>
+                        <option>Colmena 2</option>
+                        <option>Colmena 3</option>
+                        <option>Colmena 4</option>
+                        <option>Colmena 5</option>
+                    </select>
+                </div>
+
+                <div class="form-group margentexbox">
+                    <label >Contraseña</label>
+                    <input type="password" class="form-control" name="Contrasña" placeholder="Contraseña">
+                </div>
+
+                <div class="form-group margentexbox">
+                    <label >Posición</label>
+                    <select class="form-control">
+                        <option>Superior</option>
+                        <option>Centro</option>
+                        <option>Inferion</option>
+                    </select>
+                </div>
+
+                <div class="form-group margentexbox">
+                    <label >Estado</label>
+                    <select class="form-control">
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                    </select>
+                </div>
+                    <div class="row"style="text-align: right">
+                        <button type="submit" class="btn btn-success margenboton ">Guardar</button>
+                        <button type="submit" class="btn btn-warning margenboton ">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Gestion de Camaras</div>
+                    <table class="table table-bordered">
+                    <tr>
+                        <th>Nombre del Apiario</th>
+                        <th>Colmena</th>
+                        <th>Codigo</th>
+                        <th>Posicion</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                    <tbody>
+                        <tr>
+                            <td>Apiario 1</td>
+                            <td>Colmena 1</td>
+                            <td>1232</td>
+                            <td>Superior</td>
+                            <td><i class=" glyphicon glyphicon-pencil tamañoImagenes"></i><i class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+        
+        
+    
+<!--        <div class="col-lg-7 col-xs-7 col-lg-offset-2 col-xs-offset-2">
+            titulo
             <div class="col-lg-8 Titulo">
                 Registrar Camaras
             </div>
@@ -66,4 +160,4 @@
         </div>
     </div>
 </div>
-<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
+<div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>-->
