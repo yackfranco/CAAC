@@ -1,17 +1,16 @@
-        <div class="row">
+<div class="row">
             <div class="panel panel-warning centrarLogin">
                 <div class="panel-heading Titulo">LOGIN</div>
                 <div class="panel-body">
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Usuario" name="Usuario">
+                        <input type="text" class="form-control" id="usuario" ng-model="usu" placeholder="Usuario" name="Usuario">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" name="Contraseña">
+                        <input type="password" class="form-control" id="contraseña" ng-model="contra" placeholder="Contraseña" name="Contraseña">
                     </div>
-                    <a href="#!/MenuRegistrar" class="quitarlink"><button type="submit" class="btn btn-warning btn-block btn-lg">Entrar</button></a>
-
+                    <a href="{{link}}"  ng-click="entrar()" class="quitarlink"><button type="submit" class="btn btn-warning btn-block btn-lg">Entrar</button></a>
                 </div>
             </div>
         </div>
-      
+
