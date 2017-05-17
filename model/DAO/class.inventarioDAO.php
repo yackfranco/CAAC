@@ -3,7 +3,7 @@
 /**
  * conjunto de funciones para la tabla ces_usuario
  */
-class apiarioDAO extends dataSource implements IApiario {
+class inventarioDAO extends dataSource implements IInventario {
 
     /**
      * funcion para hacer borrado logico o permanente
@@ -14,9 +14,9 @@ class apiarioDAO extends dataSource implements IApiario {
     public function delete($id, $logico = true) {
 
         if ($logico === true) {
-            $sql = 'UPDATE FROM apiarios SET deleted_at = now() WHERE id_apiario = :id';
+            $sql = 'UPDATE FROM inventario SET deleted_at = now() WHERE id_inventario = :id';
         } else {
-            $sql = 'DELETE FROM apiarios WHERE id_apiario = :id';
+            $sql = 'DELETE FROM inventario WHERE id_inventario = :id';
         }
 
         $params = array(
@@ -27,16 +27,14 @@ class apiarioDAO extends dataSource implements IApiario {
 
     /**
      * funcion para insertar nuevo usuario
-     * @param \usuario $apiario
+     * @param \usuario $inventario
      * @return integer
      */
-    public function insert(\apiario $apiario) {
-        $sql = 'INSERT INTO apiarios (cod_apiario,ubicacion,id_inventario,nombre,created_at) VALUES (:codigo,:ubicacion,:id_inventario,:nombre,now())';
+    public function insert(\inventario $inventario) {
+        $sql = 'INSERT INTO inventario (pasilla,veneno,created_at) VALUES (:pasilla,:veneno,now())';
         $params = array(
-            ':codigo' => $apiario->getCod_apiario(),
-            ':ubicacion' => $apiario->getUbicacion(),
-            ':id_inventario' => $apiario->getId_inventario(),
-            ':nombre' => $apiario->getNombre()
+            ':pasilla' => $inventario->getPasilla(),
+            ':veneno' => $inventario->getVeneno()
         );
         return $this->execute($sql, $params);
     }
@@ -46,7 +44,7 @@ class apiarioDAO extends dataSource implements IApiario {
      * @return array of stdClass
      */
     public function select() {
-        $sql = 'SELECT id_apiario,cod_apiario,ubicacion,nombre FROM apiarios';
+        $sql = 'SELECT id_inventario,pasilla,veneno FROM inventario';
         return $this->query($sql);
     }
 
@@ -56,7 +54,7 @@ class apiarioDAO extends dataSource implements IApiario {
      * @return array of stdClass
      */
     public function selectById($id) {
-        $sql = 'SELECT cod_apiario,ubicacion,nombre FROM apiarios WHERE id_apiario = :id';
+        $sql = 'SELECT pasilla,veneno FROM inventario WHERE id_inventario = :id';
         $params = array(
             ':id' => $id
         );
@@ -65,16 +63,14 @@ class apiarioDAO extends dataSource implements IApiario {
 
     /**
      * funcion para actulizar usuarios
-     * @param \usuario $apiario
+     * @param \usuario $inventario
      * @return integer
      */
-    public function update(\apiario $apiario) {
-        $sql = 'UPDATE apiarios SET cod_apiario= :cod, ubicacion= :ubicacion, nombre= :nombre,updated_at= now() WHERE id_apiario = :id';
+    public function update(\inventario $inventario) {
+        $sql = 'UPDATE inventario SET pasilla= :pasilla, veneno= :veneno,updated_at= now() WHERE id_inventario = :id';
         $params = array(
-            ':id' => $apiario->getId_apiario(),
-            ':cod' => $apiario->getCod_apiario(),
-            ':ubicacion' => $apiario->getUbicacion(),
-            ':nombre' => $apiario->getNombre()
+            ':veneno' => $inventario->getVeneno(),
+            ':pasilla' => $inventario->getPasilla()
         );
         return $this->execute($sql, $params);
     }

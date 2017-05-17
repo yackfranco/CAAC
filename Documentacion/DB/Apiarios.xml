@@ -22,6 +22,15 @@
       <Cl au="0" df="" nm="nombre" nu="0">
         <DT arr="0" ds="VarChar" en="" id="12" ln="100" sc="null" sg="1" un="0"/>
       </Cl>
+      <Cl au="0" df="" nm="created_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
       <Fk deAc="1" nm="fk_apiarios_inventario" prLkCl="id_inventario" upAc="1">
         <PrTb mn="0" nm="inventario" oe="1" sch="public" zr="0"/>
         <CdTb mn="0" nm="apiarios" oe="1" sch="public" zr="0"/>
@@ -50,6 +59,15 @@
       </Cl>
       <Cl au="0" df="" nm="posicion" nu="0">
         <DT arr="0" ds="VarChar" en="" id="12" ln="50" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="created_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
       </Cl>
       <Fk deAc="1" nm="fk_camaras_colmenas" prLkCl="id_colmena" upAc="1">
         <PrTb mn="0" nm="colmenas" oe="1" sch="public" zr="0"/>
@@ -82,6 +100,15 @@
       </Cl>
       <Cl au="0" df="" nm="id_reina" nu="0">
         <DT arr="0" ds="BigInt" en="" id="-5" ln="null" sc="null" sg="0" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="create_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
       </Cl>
       <Fk deAc="1" nm="fk_colmenas_apiarios" prLkCl="id_apiario" upAc="1">
         <PrTb mn="0" nm="apiarios" oe="1" sch="public" zr="0"/>
@@ -139,6 +166,15 @@
       <Cl au="0" df="" nm="veneno" nu="1">
         <DT arr="0" ds="Float" en="" id="6" ln="null" sc="null" sg="1" un="0"/>
       </Cl>
+      <Cl au="0" df="" nm="created_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
       <UniqueConstraints/>
       <SchTrHis/>
     </Tbl>
@@ -159,6 +195,15 @@
       </Cl>
       <Cl au="0" df="" nm="cod_marco" nu="0">
         <DT arr="0" ds="VarChar" en="" id="12" ln="100" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="created_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_ad" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
       </Cl>
       <Fk deAc="1" nm="fk_marcos_camaras" prLkCl="id_camara" upAc="1">
         <PrTb mn="0" nm="camaras" oe="1" sch="public" zr="0"/>
@@ -183,6 +228,15 @@
       <Cl au="0" df="" nm="id_apiario" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="0" un="0"/>
       </Cl>
+      <Cl au="0" df="" nm="created_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
       <Fk deAc="1" nm="fk_miel_apiarios" prLkCl="id_apiario" upAc="1">
         <PrTb mn="0" nm="apiarios" oe="1" sch="public" zr="0"/>
         <CdTb mn="1" nm="miel" oe="0" sch="public" zr="1"/>
@@ -204,6 +258,15 @@
         <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
       </Cl>
       <Cl au="0" df="" nm="fecha_salida" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="created_at" nu="0">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="updated_at" nu="1">
+        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
+      <Cl au="0" df="" nm="deleted_at" nu="1">
         <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
       </Cl>
       <UniqueConstraints/>
@@ -301,11 +364,11 @@
       <DbTableRectangleFill>HeaderFooterFill</DbTableRectangleFill>
       <svg path=""/>
     </DiaProps>
-    <TbGl bkCl="ff6666ff" sch="public" tbl="usuario" x="115" y="236"/>
+    <TbGl bkCl="ff6666ff" sch="public" tbl="usuario" x="112" y="267"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="apiarios" x="392" y="137"/>
-    <TbGl bkCl="ff6666ff" sch="public" tbl="colmenas" x="390" y="256"/>
-    <TbGl bkCl="ff6666ff" sch="public" tbl="camaras" x="727" y="401"/>
-    <TbGl bkCl="ff6666ff" sch="public" tbl="marcos" x="397" y="405"/>
+    <TbGl bkCl="ff6666ff" sch="public" tbl="colmenas" x="389" y="282"/>
+    <TbGl bkCl="ff6666ff" sch="public" tbl="camaras" x="804" y="451"/>
+    <TbGl bkCl="ff6666ff" sch="public" tbl="marcos" x="398" y="466"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="reinas" x="685" y="284"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="inventario" x="163" y="146"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="miel" x="701" y="136"/>
@@ -337,7 +400,7 @@
     <Notes/>
     <Zones/>
   </Dgm>
-  <RnmMgr NxRnmId="17">
+  <RnmMgr NxRnmId="18">
     <RnmCh ObjCls="Schema" ParCls="Database" ParNme="newDb" SupCls="" SupNme="">
       <Rnm id="1" nNm="public" oNm="schemaA"/>
     </RnmCh>
@@ -382,6 +445,9 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="estados" SupCls="Schema" SupNme="public">
       <Rnm id="16" nNm="idestado" oNm="Id"/>
     </RnmCh>
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="marcos" SupCls="Schema" SupNme="public">
+      <Rnm id="17" nNm="created_at" oNm="create_at"/>
+    </RnmCh>
   </RnmMgr>
   <DbDocOptionMgr>
     <BasicOptionMgr>
@@ -399,7 +465,7 @@
     </BasicOptionMgr>
   </DbDocOptionMgr>
   <OpenEditors>
-    <OpenEditor ClsNm="Diagram" fqn="null.diagramA" selected="0"/>
+    <OpenEditor ClsNm="Diagram" fqn="null.diagramA" selected="1"/>
   </OpenEditors>
   <TreePaths>
     <TreePath/>
