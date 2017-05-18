@@ -2,14 +2,17 @@
     <div class="panel panel-warning centrarLogin">
         <div class="panel-heading Titulo">LOGIN</div>
         <div class="panel-body">
-            <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="usuario" ng-model="usu" placeholder="Usuario" name="Usuario" required="">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="contraseña" ng-model="contra" placeholder="Contraseña" name="Contraseña" required="">
-            </div>
-            <a href="{{link}}"  ng-click="entrar()" class="quitarlink"><button type="submit" class="btn btn-warning btn-block btn-lg">Entrar</button></a>
+            <form ng-submit="entrar()">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usuario" ng-model="datos.usuario" placeholder="Usuario" name="Usuario" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="contraseña" ng-model="datos.contrasena" placeholder="Contraseña" name="Contraseña" required>
+                </div>
+                <div class="alert alert-danger" style="margin-top: 40px;" ng-show="usuarioErroneo">
+                    Usuario inválido
+                </div>
+                <button type="submit" class="btn btn-warning btn-block btn-lg">Entrar</button>
             </form>
         </div>
     </div>

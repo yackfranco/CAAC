@@ -1,19 +1,28 @@
-angular.module('CAAC').controller('indexController', ['$scope', function ($scope) {
-
+angular.module('CAAC').controller('indexController', ['$scope', 'securityService','$sessionStorage', function ($scope, security,$sessionStorage) {
+        $scope.datos = {};
+        $scope.usuarioErroneo = false;
         $scope.entrar = function () {
-            var usuario = $scope.usu;
-            var contra = $scope.contra;
-            console.log("usuario: " + usuario);
-            console.log("Contraseña: " + contra);
-            if (usuario == "a" && contra == "1")
-            {
-                $scope.link = "#!/MenuRegistrar";
-            } else
-            {
-//                        $scope.link="#!/";
-                alert("Usuario o Contraseña incorrecto");
-            }
-        }
+            security.validateUserAndPassword($scope.datos).then(function successCallback(answer) {
+                console.log(answer);
+                if (answer.data.codigo === 200)
+                {
+                    $scope.usuarioErroneo = false;
+                    console.log("todo bien");
+                    $sessionStorage.usuario = answer.data.usuario[0];
+                } else
+                {
+                    $scope.datos = {};
+                    $scope.usuarioErroneo = true;
+                }
+            }, function errorCallback(answer) {
+                console.log(answer);
+            });
+
+
+//            $scope.usuarioErroneo = false;
+//            console.log($scope.datos);
+
+        };
 
 //                
     }]);

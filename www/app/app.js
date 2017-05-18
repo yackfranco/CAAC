@@ -1,1 +1,1 @@
-angular.module('CAAC', ['ngRoute', 'ngResource']);
+angular.module('CAAC', ['ngRoute', 'ngResource','ngStorage']);
