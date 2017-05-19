@@ -1,9 +1,27 @@
+angular.module('CAAC').constant('rolAdmin', 'admin');
+angular.module('CAAC').constant('rolCelador', 'invitado');
+
+
+angular.module('CAAC').config(['$middlewareProvider',
+    function middlewareProviderConfig($middlewareProvider) {
+        $middlewareProvider.map({
+            'comprobarSession': ['$localStorage', '$sessionStorage', function comprobarSession($localStorage, $sessionStorage) {
+                    middlewareComprobarSession(this, $localStorage, $sessionStorage);
+                }],
+            'comprobarNoTenerSesion': ['$localStorage', '$sessionStorage', 'rolAdmin', function comprobarPermisoDeCelador($localStorage, $sessionStorage, rolAdmin) {
+                    middlewareComprobarNoTenerSesion(this, $localStorage, $sessionStorage, rolAdmin);
+                }]
+        });
+    }]);
+
+
 angular.module('CAAC').config(['$routeProvider', '$httpProvider', function config($routeProvider, $httpProvider) {
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
         $routeProvider.
                 when('/', {
                     controller: 'indexController',
-                    templateUrl: 'app/template/index.html'
+                    templateUrl: 'app/template/index.html',
+                    middleware: 'comprobarNoTenerSesion'
                 }).
                 when('/ControlApiarios', {
                     controller: 'controlApiariosController',
@@ -91,11 +109,16 @@ angular.module('CAAC').config(['$routeProvider', '$httpProvider', function confi
                 }).
                 when('/MenuRegistrar', {
                     controller: 'menuRegistrarController',
-                    templateUrl: 'app/template/MenuRegistrar.html'
+                    templateUrl: 'app/template/MenuRegistrar.html',
+                    middleware: 'comprobarSession'
                 }).
                 when('/MenuConsultas', {
                     controller: 'menuConsultasController',
                     templateUrl: 'app/template/MenuConsultas.html'
+                }).
+                when('/copyRight', {
+                    controller: 'copyRightController',
+                    templateUrl: 'app/template/CopyRight.html'
                 }).
                 otherwise('/');
     }

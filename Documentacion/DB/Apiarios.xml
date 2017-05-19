@@ -364,7 +364,7 @@
       <DbTableRectangleFill>HeaderFooterFill</DbTableRectangleFill>
       <svg path=""/>
     </DiaProps>
-    <TbGl bkCl="ff6666ff" sch="public" tbl="usuario" x="112" y="267"/>
+    <TbGl bkCl="ff6666ff" sch="public" tbl="usuario" x="142" y="283"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="apiarios" x="392" y="137"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="colmenas" x="389" y="282"/>
     <TbGl bkCl="ff6666ff" sch="public" tbl="camaras" x="804" y="451"/>
@@ -464,9 +464,7 @@
       <BoolOpt lbl="Views" nm="doc.views" on="1" spl="0"/>
     </BasicOptionMgr>
   </DbDocOptionMgr>
-  <OpenEditors>
-    <OpenEditor ClsNm="Diagram" fqn="null.diagramA" selected="1"/>
-  </OpenEditors>
+  <OpenEditors/>
   <TreePaths>
     <TreePath/>
     <TreePath>/Schemas (1)</TreePath>

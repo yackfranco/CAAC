@@ -31,13 +31,13 @@ class usuarioDAO extends dataSource implements IUsuario {
      * @return integer
      */
     public function insert(\usuario $usuario) {
-        $sql = 'INSERT INTO ces_usuario (usuario,contraseña,email,celular,rol,created_at) VALUES (:user,:contra,:email,:celular,:rol,now())';
+        $sql = 'INSERT INTO ces_usuario (usuario,contraseña,email,celular,rol,created_at) VALUES (:user,:contra,:email,:celular,"admin",now())';
         $params = array(
             ':user' => $usuario->getUsuario(),
             ':contra' => $usuario->getContraseña(),
             ':email' => $usuario->getEmail(),
             ':celular' => $usuario->getCelular(),
-            ':rol' => $usuario->getRol()
+//            ':rol' => $usuario->getRol()
         );
         return $this->execute($sql, $params);
     }

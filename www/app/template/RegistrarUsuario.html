@@ -8,43 +8,43 @@
                 Registrar Usuario
             </div>
             <div class="col-lg-6">
-                <form class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8">
+                <form class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8" ng-submit="guardar()">
                     <div class="form-group">
                         <label >Usuario</label>
-                        <input type="text" class="form-control" name="Usuario" placeholder="Usuario">
+                        <input type="text" class="form-control" name="Usuario" placeholder="Usuario" ng-model="datos.usuario" required>
                     </div>
                     <div class="form-group">
                         <label >Contraseña</label>
-                        <input type="password" class="form-control" name="Contrasña" placeholder="Contraseña">
+                        <input type="password" class="form-control" name="Contrasña" placeholder="Contraseña" required  ng-model="datos.contrasena">
                     </div>
                     <div class="form-group">
                         <label >Confirmar Contraseña</label>
-                        <input type="password" class="form-control" name="ConfirmarContraseña" placeholder="Confirmar Contraseña">
+                        <input type="password" class="form-control" name="ConfirmarContraseña" placeholder="Confirmar Contraseña" required ng-model="datos.confirmarContrasena">
                     </div>
                     <div class="form-group">
                         <label >Correo</label>
-                        <input type="email" class="form-control" name="Correo" placeholder="Correo">
+                        <input type="email" class="form-control" name="Correo" placeholder="Correo" required ng-model="datos.correo">
                     </div>
                     <div class="form-group">
                         <label >Celular</label>
-                        <input type="number" class="form-control" name="Celular" placeholder="Celular">
+                        <input type="number" class="form-control" name="Celular" placeholder="Celular" required  ng-model="datos.celular">
                     </div>
 
                     <!--rol-->
                     <label >Rol</label>
                     <div class="btn-group btn-block">
-                        <button type="button" class="btn btn-default">Admin</button>
+                        <button type="button" class="btn btn-default" >Admin</button>
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="caret"></span>
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Admin Apiario</a></li>
-                            <li><a href="#">Contador</a></li>
+                            <li><a>Admin Apiario</a></li>
+                            <li><a>Contador</a></li>
                         </ul>
                     </div>
                     <br>
-                    <div class="row"style="text-align: right">
+                    <div class="row" style="text-align: right">
                         <button type="submit" class="btn btn-success margenboton ">Guardar</button>
                         <button type="submit" class="btn btn-warning margenboton ">Cancelar</button>
                     </div>
@@ -71,7 +71,7 @@
                             <td>jesusandres548@gmail.com</td>
                             <td>3113393379</td>
                             <td>ADMIN</td>
-                            <td><i class=" glyphicon glyphicon-pencil tamañoImagenes"></i><i class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
+                            <td><i ng-click="editar()" class="glyphicon glyphicon-pencil tamañoImagenes"></i><i ng-click="eliminar()" class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
                         </tr>
                     </tbody>
                 </table>

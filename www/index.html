@@ -7,24 +7,31 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-        
+
     </head>
     <body>
-        
+
         <div class="" ng-view ng-cloak></div>
-        
+
         <script src="js/angular-1.6.1/angular.min.js" type="text/javascript"></script>
         <script src="js/angular-1.6.1/angular-route.min.js" type="text/javascript"></script>
         <script src="js/angular-1.6.1/angular-resource.min.js" type="text/javascript"></script>
         <script src="js/ngStorage.min.js" type="text/javascript"></script>
-        
+        <script src="js/angular-middleware.min.js"></script>
+
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        
+
+        <script src="app/middleware/middleware.comprobarSession.js"></script>
+        <script src="app/middleware/middleware.comprobarPermisoDeCelador.js"></script>
+        <script src="app/middleware/middleware.comprobarPermisoDeAdmnistracion.js"></script>
+        <script src="app/middleware/middleware.comprobarNoTenerSesion.js"></script>
+
         <script src="app/app.js" type="text/javascript"></script>
         <script src="app/app.config.js" type="text/javascript"></script>
-        
+
         <script src="app/service/service.security.js" type="text/javascript"></script>
+        <script src="app/service/service.crudUsuario.js" type="text/javascript"></script>
         
         <script src="app/controller/controller.consultarColmena.js" type="text/javascript"></script>
         <script src="app/controller/controller.consultarColmenaBueno.js" type="text/javascript"></script>
@@ -50,9 +57,9 @@
         <script src="app/controller/controller.registrarInventario.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarMarcos.js" type="text/javascript"></script>
         <script src="app/controller/controller.registrarUsuario.js" type="text/javascript"></script>
-        
+        <script src="app/controller/controller.copyRight.js" type="text/javascript"></script>
     </body>
 </html>
-  
+
 
 
