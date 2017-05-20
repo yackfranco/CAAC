@@ -31,13 +31,13 @@ class usuarioDAO extends dataSource implements IUsuario {
      * @return integer
      */
     public function insert(\usuario $usuario) {
-        $sql = 'INSERT INTO ces_usuario (usuario,contraseña,email,celular,rol,created_at) VALUES (:user,:contra,:email,:celular,"admin",now())';
+        $sql = 'INSERT INTO usuario (usuario,contrasena,email,celular,rol,created_at) VALUES (:user,:contra,:email,:celular,:rol,now())';
         $params = array(
             ':user' => $usuario->getUsuario(),
             ':contra' => $usuario->getContraseña(),
             ':email' => $usuario->getEmail(),
             ':celular' => $usuario->getCelular(),
-//            ':rol' => $usuario->getRol()
+            ':rol' => $usuario->getRol()
         );
         return $this->execute($sql, $params);
     }
@@ -47,7 +47,7 @@ class usuarioDAO extends dataSource implements IUsuario {
      * @return array of stdClass
      */
     public function select() {
-        $sql = 'SELECT usuario,contraseña,email,celular,rol FROM usuario';
+        $sql = 'SELECT usuario,contrasena,email,celular,rol FROM usuario';
         return $this->query($sql);
     }
 
@@ -57,7 +57,7 @@ class usuarioDAO extends dataSource implements IUsuario {
      * @return array of stdClass
      */
     public function selectById($id) {
-        $sql = 'SELECT usuario,contraseña,email,celular,rol FROM usuario WHERE id = :id';
+        $sql = 'SELECT usuario,contrasena,email,celular,rol FROM usuario WHERE id = :id';
         $params = array(
             ':id' => $id
         );
@@ -70,7 +70,7 @@ class usuarioDAO extends dataSource implements IUsuario {
      * @return integer
      */
     public function update(\usuario $usuario) {
-        $sql = 'UPDATE usuario SET usuerio= :user, contraseña = :contra, email= :email, celular= :celular, rol= :rol  WHERE id = :id';
+        $sql = 'UPDATE usuario SET usuerio= :user, contrasena = :contra, email= :email, celular= :celular, rol= :rol  WHERE id = :id';
         $params = array(
             ':id' => $usuario->getId(),
             ':user' => $usuario->getUsuario(),

@@ -10,13 +10,15 @@ class guardarUsuario extends controllerExtended {
             $password = hash($this->getConfig()->getHash(), $request->getParam('contrasena'), false);
             $correo = $request->getParam('correo');
             $celular = $request->getParam('celular');
-//            $rol = $request->getParam('rol');
+            $rol = $request->getParam('rol');
             
             $usuario = new usuario();
             $usuario->setUsuario($user);
             $usuario->setEmail($correo);
             $usuario->setCelular($celular);
             $usuario->setContraseña($password);
+            $usuario->setRol($rol);
+            
             $usuarioDAO = new usuarioDAOExt($this->getConfig());
             $respuesta1 = $usuarioDAO->insert($usuario);
             $respuesta2 = array(

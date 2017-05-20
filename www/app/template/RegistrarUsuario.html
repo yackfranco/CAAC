@@ -31,22 +31,23 @@
                     </div>
 
                     <!--rol-->
-                    <label >Rol</label>
-                    <div class="btn-group btn-block">
-                        <button type="button" class="btn btn-default" >Admin</button>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a>Admin Apiario</a></li>
-                            <li><a>Contador</a></li>
-                        </ul>
+                    <div class="form-group">
+                        <label for="selectRol">Rol</label>
+                        <select id="selectRol" class="form-control" required ng-model="datos.rol">
+                            <option value="">Seleccione un rol</option>
+                            <option value="admin">Administrador</option>
+                            <option value="contador">Contador</option>
+                        </select>
                     </div>
-                    <br>
+
                     <div class="row" style="text-align: right">
                         <button type="submit" class="btn btn-success margenboton ">Guardar</button>
                         <button type="submit" class="btn btn-warning margenboton ">Cancelar</button>
+                    </div>
+                    
+                    <div class="alert alert-success alert-dismissible" role="alert" ng-show="usuarioGuardado">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        Usuario Guardado
                     </div>
                 </form>
             </div>
@@ -57,26 +58,26 @@
                     <!-- Default panel contents -->
                     <div class="panel-heading">Gestion de Usuarios</div>
                     <table class="table table-bordered">
-                    <tr>
-                        <th>Usuario</th>
-                        <th>Correo</th>
-                        <th>Celular</th>
-                        <th>Rol</th>
-                        <th>Acciones</th>
-                    </tr>
-
-                    <tbody>
                         <tr>
-                            <td>Yisus</td>
-                            <td>jesusandres548@gmail.com</td>
-                            <td>3113393379</td>
-                            <td>ADMIN</td>
-                            <td><i ng-click="editar()" class="glyphicon glyphicon-pencil tamañoImagenes"></i><i ng-click="eliminar()" class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Celular</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
                         </tr>
-                    </tbody>
-                </table>
+
+                        <tbody>
+                            <tr>
+                                <td>Yisus</td>
+                                <td>jesusandres548@gmail.com</td>
+                                <td>3113393379</td>
+                                <td>ADMIN</td>
+                                <td><i ng-click="editar()" class="glyphicon glyphicon-pencil tamañoImagenes"></i><i ng-click="eliminar()" class="glyphicon glyphicon-trash tamañoImagenes"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
+
 
             </div>
 
@@ -85,4 +86,4 @@
 
     </div>
     <div class="col-lg-12 col-xs-12 panel panel-heading copy btn-lg">Copyright</div>
-    </div>
+</div>
