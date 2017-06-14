@@ -14,7 +14,7 @@ class usuarioDAO extends dataSource implements IUsuario {
     public function delete($id, $logico = true) {
 
         if ($logico === true) {
-            $sql = 'UPDATE FROM usuario SET deleted_at = now() WHERE id = :id';
+            $sql = 'UPDATE usuario SET deleted_at = now() WHERE id = :id';
         } else {
             $sql = 'DELETE FROM usuario WHERE id = :id';
         }
@@ -47,7 +47,7 @@ class usuarioDAO extends dataSource implements IUsuario {
      * @return array of stdClass
      */
     public function select() {
-        $sql = 'SELECT usuario,contrasena,email,celular,rol FROM usuario';
+        $sql = 'SELECT id,usuario,contrasena,email,celular,rol FROM usuario WHERE deleted_at IS NULL';
         return $this->query($sql);
     }
 
